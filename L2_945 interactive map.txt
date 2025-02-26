@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Level_2" data-name="Level 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2535.63 957.65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b9529f;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-7, .cls-8 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-8 {
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #6fccdd;
+      }
+
+      .cls-3 {
+        fill: #6abd45;
+      }
+
+      .cls-4, .cls-7 {
+        fill: #4d4d4e;
+      }
+
+      .cls-5 {
+        fill: #006937;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6, .cls-7 {
+        stroke-width: 2px;
+      }
+
+      .cls-8 {
+        fill: #f79420;
+      }
+    </style>
+  </defs>
+  <g id="L2_-_outline" data-name="L2 - outline">
+    <polyline id="L2_Building_Outline" data-name="L2 Building Outline" class="cls-6" points="2386.64 340.76 2386.91 171.22 2533.55 171.22 2533.55 680.32 2508.29 679.96 2508.14 736.68 2470.01 736.81 2470.01 758.74 2508.11 758.74 2507.81 878.5 2480.33 878.44 2480.33 893.38 2468.51 904.96 2453.69 904.96 2453.69 932.86 2310.59 932.86 2310.35 955.9 2246.63 955.9 2246.63 932.8 2104.61 931.12 2104.79 905.5 2087.87 905.5 2076.47 893.62 2076.47 878.74 2048.57 878.74 2048.57 808.12 2098.73 807.82 2098.73 791.5 2050.01 791.44 2050.01 760.42 2039.45 760.42 2039.39 767.86 1976.87 768.1 1976.87 406.54 1962.29 406.54 1962.29 386.92 1784.81 386.8 1784.81 426.28 1709.03 426.28 1709.03 377.38 1666.91 377.26 1666.07 322.12 1706.39 322.12 1706.39 221.56 1744.25 221.56 1744.25 1 1929.23 1 1929.83 222.82 2263.01 222.82 2261.69 498.34 2149.55 498.34 2149.55 684.04 2144.03 684.04 2143.97 704.86 2242.13 704.86 2242.13 701.08 2315.03 701.62 2315.03 705.16 2411.87 705.16 2411.87 680.02 2385.65 680.02 2385.35 586.96 2339.27 586.78 2338.07 536.32 2386.85 536.32 2386.85 480.34 2363.57 480.34 2363.57 395.26 2386.55 395.26 2386.91 171.22 2533.25 171.52"/>
+    <polyline id="L2_outline_B2" data-name="L2 outline B2" class="cls-6" points="2263.01 222.82 1929.83 222.82 1929.23 1 1744.25 1 1744.33 220.79 1706.39 221.56 1706.39 322.12 1706.36 329.66 2263.01 329.66 2263.01 222.82"/>
+    <polygon id="L2_Outline_B1" data-name="L2 Outline B1" class="cls-6" points="2310.35 955.9 2246.63 955.9 2246.63 932.8 2104.61 931.12 2104.79 905.5 2087.87 905.5 2076.47 893.62 2076.47 878.74 2048.57 878.74 2049.68 683.49 2144.03 684.04 2143.97 704.86 2242.13 704.86 2242.13 701.08 2315.03 701.62 2315.03 705.16 2411.87 705.16 2411.87 680.02 2385.47 680.02 2386.91 171.22 2533.55 171.22 2533.55 679.96 2508.29 679.96 2508.29 736.81 2507.81 878.5 2480.33 878.44 2480.33 893.38 2468.51 904.96 2453.69 904.96 2453.69 932.86 2310.59 932.86 2310.35 955.9"/>
+  </g>
+  <g id="L2_Available" data-name="L2 Available">
+    <polygon id="L2_Available_01" data-name="L2 Available 01" class="cls-8" points="2310.59 932.86 2453.69 932.86 2453.69 904.96 2468.51 904.96 2480.33 893.38 2480.33 878.44 2507.81 878.5 2508.11 758.74 2462.67 758.74 2462.67 793.25 2373.98 793.25 2373.98 832.93 2328 832.93 2328.42 888 2310.26 888.25 2310.59 932.86"/>
+    <polygon id="L2_Available_02" data-name="L2 Available 02" class="cls-8" points="2411.87 705.16 2411.87 738.66 2445.05 738.66 2445.05 771.77 2315.51 771.77 2315.03 705.16 2411.87 705.16"/>
+    <polygon class="cls-8" points="2050.01 791.44 2049.68 683.49 2144.03 684.04 2143.97 704.86 2242.13 704.86 2242.13 701.08 2266.54 701.22 2266.54 733.93 2245.3 733.93 2245.05 770.29 2098.63 770.29 2098.73 791.5 2050.01 791.44"/>
+    <polygon class="cls-8" points="2246.63 932.8 2104.61 931.12 2104.79 905.5 2087.87 905.5 2076.47 893.62 2076.47 878.74 2048.57 878.74 2048.57 808.12 2122.31 807.59 2122.31 792.61 2186.58 793.11 2186.58 831.32 2263.79 831.32 2263.79 855.54 2246.89 855.54 2246.63 932.8"/>
+    <rect id="Avialablet" class="cls-1" x="2509.9" y="191.82" width="24.24" height="167.46"/>
+  </g>
+  <g id="L2_facilities" data-name="L2 facilities">
+    <rect id="Stairs_02" data-name="Stairs 02" class="cls-7" x="2066.11" y="794.91" width="18.53" height="6.24"/>
+    <rect id="Stairs_02-2" data-name="Stairs 02" class="cls-4" x="2281.48" y="714.15" width="12.48" height="37.06"/>
+    <rect id="L2_Bathroom" data-name="L2 Bathroom" class="cls-3" x="2411.87" y="680.02" width="46.06" height="58.64"/>
+    <rect id="Base_Building_Mechanical_Services_NG_Back-up_Boiler_Rm_Air_Compressors" data-name="Base Building Mechanical Services NG Back-up Boiler Rm &amp;amp; Air Compressors" class="cls-5" x="1743.88" y="182.36" width="72.91" height="40.47"/>
+    <rect id="Stairs_02-3" data-name="Stairs 02" class="cls-7" x="2476.15" y="748.64" width="18.53" height="6.24"/>
+    <rect id="Stairs_02-4" data-name="Stairs 02" class="cls-7" x="2508.4" y="560.26" width="18.53" height="6.24"/>
+    <rect id="Stairs_02-5" data-name="Stairs 02" class="cls-4" x="2310.57" y="845.21" width="12.48" height="37.06"/>
+    <rect id="Elevator" class="cls-4" x="2291.52" y="893.99" width="14.24" height="14.24"/>
+  </g>
+  <g id="L2_tenants" data-name="L2 tenants">
+    <rect id="Buchi" class="cls-2" x="2470.01" y="679.96" width="38.28" height="56.85"/>
+    <rect id="Sparq_Systems_01" data-name="Sparq Systems 01" class="cls-2" x="2385.47" y="571.87" width="72.46" height="108.15"/>
+    <rect id="Sparq_Systems_02" data-name="Sparq Systems 02" class="cls-2" x="2386.47" y="497.46" width="111.34" height="57.18"/>
+    <rect id="Sparq_Systems_03" data-name="Sparq Systems 03" class="cls-2" x="2509.9" y="377.6" width="23.65" height="177.04"/>
+    <polygon id="GReen_Center_Canada" data-name="GReen Center Canada" class="cls-2" points="2470.01 679.96 2533.55 679.96 2533.55 570.87 2498.85 570.87 2498.85 587.37 2470.01 587.23 2470.01 679.96"/>
+    <polygon id="RXN_HUB" data-name="RXN HUB" class="cls-2" points="2205.07 329.66 2263.01 329.66 2263.01 222.82 2231.56 222.82 2231.56 301.54 2205.07 301.69 2205.07 329.66"/>
+    <rect id="Airwise_Mezzanine" data-name="Airwise Mezzanine" class="cls-2" x="1816.79" y="146.87" width="75.96" height="75.96"/>
+  </g>
+</svg>
