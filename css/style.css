@@ -151,7 +151,7 @@ button:focus {
 	position: fixed;
 	top: 0;
 	left: 0;
-	overflow: hidden;
+	overflow:;
 	width: calc(100vw - 300px);
 	height: 100vh;
 }
@@ -181,6 +181,14 @@ button:focus {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+}
+
+.level {
+pointer-events: none;
+}
+
+.level svg {
+pointer-events: auto;
 }
 
 .surroundings {
