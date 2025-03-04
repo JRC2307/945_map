@@ -328,7 +328,7 @@ button:focus {
 	stroke-width: 4px;
 }
 
-.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12 {
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-14 {
 	stroke: #000;
 }
 
@@ -344,7 +344,7 @@ button:focus {
 	fill: #78c8e6;
 }
 
-.cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-10, .cls-11, .cls-12 {
+.cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-10, .cls-11, .cls-12, .cls-11, .cls-14 {
 	stroke-width: 3px;
 }
 
@@ -390,12 +390,17 @@ button:focus {
 	fill: #cd3f8b;
 }
 
+
 .cls-13 {
 	fill: rgba(217, 217, 217); /* Grey with 50% transparency */
     stroke: #7e7e7e; /* Grey outline */
     stroke-width: 4px; 
 }
 
+/*rnx hub*/
+.cls-14 {
+	fill: #ffc300;
+}
 
 
 
