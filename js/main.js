@@ -276,7 +276,7 @@
 	 * Shows the level´s pins
 	 */
 	function showPins(levelEl) {
-		var levelEl = levelEl || mallLevels[selectedLevel - 1];
+		var levelEl = levelEl || mallLevels[selectedLevel === 0 ? 0 : selectedLevel - 1];
 		classie.add(levelEl.querySelector('.level__pins'), 'level__pins--active');
 	}
 
