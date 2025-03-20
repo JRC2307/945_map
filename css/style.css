@@ -920,6 +920,232 @@ button:focus {
 .pin--2-8 { top: 30vmin; left: 70vmin; } /* Impact Chemistry */
 .pin--2-9 { top: 20vmin; left: 45vmin; } /* RXN HUB */
 
+/* Level 0 styles */
+.level--1 .cls-1 {
+  stroke-dasharray: 9.6183 9.6183;
+}
+
+.level--1 .cls-1, .level--1 .cls-2, .level--1 .cls-3, .level--1 .cls-4, .level--1 .cls-5 {
+  stroke-miterlimit: 10;
+}
+
+.level--1 .cls-1, .level--1 .cls-3, .level--1 .cls-5 {
+  fill: none;
+  stroke: #231f20;
+  stroke-width: .5px;
+}
+
+.level--1 .cls-6 {
+  fill: #006137;
+}
+
+.level--1 .cls-7 {
+  fill: #71cee9;
+}
+
+.level--1 .cls-2 {
+  fill: #ebebeb;
+}
+
+.level--1 .cls-2, .level--1 .cls-4 {
+  stroke: #adadad;
+}
+
+.level--1 .cls-2, .level--1 .cls-4, .level--1 .cls-8 {
+  stroke-width: 8px;
+}
+
+.level--1 .cls-9 {
+  fill: #424243;
+}
+
+.level--1 .cls-10 {
+  fill: #434143;
+}
+
+.level--1 .cls-11 {
+  fill: #c7c8ca;
+}
+
+.level--1 .cls-12 {
+  fill: #b9dba1;
+}
+
+.level--1 .cls-4, .level--1 .cls-8 {
+  fill: #bfbfbf;
+}
+
+.level--1 .cls-8 {
+  stroke: #bfbfbf;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.level--1 .cls-5 {
+  stroke-dasharray: 12.4076 12.4076;
+}
+
+.level--1 .cls-13 {
+  fill: #f89940;
+}
+
+.level--1 .cls-14 {
+  fill: #ee2b4f;
+}
+
+.level--1 .cls-15 {
+  fill: #424142;
+}
+
+.level--1 .cls-16 {
+  fill: #b9dca1;
+}
+
+/* Level 1 styles */
+.level--2 .cls-1 {
+  fill: #b7d399;
+}
+
+.level--2 .cls-2 {
+  fill: #ebebec;
+  stroke: #adadad;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 8px;
+}
+
+.level--2 .cls-3 {
+  fill: #2aa38d;
+}
+
+.level--2 .cls-4 {
+  fill: #414042;
+}
+
+.level--2 .cls-5 {
+  fill: #27a38d;
+}
+
+.level--2 .cls-6 {
+  fill: #fec415;
+}
+
+.level--2 .cls-7 {
+  fill: #2ca38d;
+}
+
+.level--2 .cls-8 {
+  fill: #434143;
+}
+
+.level--2 .cls-9 {
+  fill: #bfc1c3;
+}
+
+.level--2 .cls-10 {
+  fill: #cd408c;
+}
+
+.level--2 .cls-11 {
+  fill: #ee2b4f;
+}
+
+.level--2 .cls-12 {
+  fill: #424142;
+}
+
+.level--2 .cls-13 {
+  fill: #0e5432;
+}
+
+.level--2 .cls-14 {
+  fill: #0f5532;
+}
+
+.level--2 .cls-15 {
+  fill: #fec40e;
+}
+
+.level--2 .cls-16 {
+  fill: #4d4d4e;
+}
+
+/* Level 2 styles */
+.level--3 .cls-1 {
+  fill: #b7d399;
+}
+
+.level--3 .cls-2 {
+  stroke-dasharray: 6.789 6.789;
+}
+
+.level--3 .cls-2, .level--3 .cls-3, .level--3 .cls-4, .level--3 .cls-5, .level--3 .cls-6, .level--3 .cls-7 {
+  stroke-miterlimit: 10;
+}
+
+.level--3 .cls-2, .level--3 .cls-3, .level--3 .cls-6, .level--3 .cls-7 {
+  fill: none;
+  stroke-width: .5px;
+}
+
+.level--3 .cls-2, .level--3 .cls-6 {
+  stroke: #231f20;
+}
+
+.level--3 .cls-3 {
+  stroke-dasharray: 3.7976 3.7976;
+}
+
+.level--3 .cls-3, .level--3 .cls-7 {
+  stroke: #000;
+}
+
+.level--3 .cls-8 {
+  fill: #27a38d;
+}
+
+.level--3 .cls-4 {
+  fill: #bfbfbf;
+  stroke: #bfbfbf;
+}
+
+.level--3 .cls-4, .level--3 .cls-5 {
+  stroke-width: 8px;
+}
+
+.level--3 .cls-5 {
+  fill: #ebebeb;
+  stroke: #adadad;
+}
+
+.level--3 .cls-9 {
+  fill: #fec415;
+}
+
+.level--3 .cls-10 {
+  fill: #cd418c;
+}
+
+.level--3 .cls-11 {
+  fill: #434143;
+}
+
+.level--3 .cls-12 {
+  fill: #bfc1c3;
+}
+
+.level--3 .cls-13 {
+  fill: #424142;
+}
+
+.level--3 .cls-14 {
+  fill: #0f5532;
+}
+
+.level--3 .cls-15 {
+  fill: #4d4d4e;
+}
+
 /* Mobile compatability */
 .open-search,
 .close-search {
