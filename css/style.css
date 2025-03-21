@@ -228,11 +228,16 @@ button:focus {
 	cursor: pointer;
 	pointer-events: auto;
 	-webkit-transition: opacity 1s, -webkit-transform 1s;
-	transition: opacity 1s, transform 1s;
+	transition: opacity 1s, transform 1s, box-shadow 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+}
+
+/* Use filter instead of box-shadow to follow the perimeter - but not when already selected */
+.level:not(.level--current):hover {
+	filter: drop-shadow(0 0 2px rgba(81, 81, 88, 0.5));
 }
 
 .level::after {
@@ -252,8 +257,11 @@ button:focus {
 	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-.level:hover::after {
+/* Make the level text more visible on hover WITHOUT applying any transforms that could flatten it */
+.level:not(.level--current):hover::after {
 	color: #515158;
+	font-weight: bold;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .level--current::after {
@@ -452,8 +460,41 @@ button:focus {
 	fill: #bbb;
 }
 
-.level:hover .map__outline {
-	fill: #a6a3a8;
+/* Apply hover effects to all SVG shapes - but not when already selected */
+.level:not(.level--current):hover .map__outline,
+.level:not(.level--current):hover .cls-1, .level:not(.level--current):hover .cls-2, .level:not(.level--current):hover .cls-3,
+.level:not(.level--current):hover .cls-4, .level:not(.level--current):hover .cls-5, .level:not(.level--current):hover .cls-6,
+.level:not(.level--current):hover .cls-7, .level:not(.level--current):hover .cls-8, .level:not(.level--current):hover .cls-9,
+.level:not(.level--current):hover .cls-10, .level:not(.level--current):hover .cls-11, .level:not(.level--current):hover .cls-12,
+.level:not(.level--current):hover .cls-13, .level:not(.level--current):hover .cls-14, .level:not(.level--current):hover .cls-15,
+.level:not(.level--current):hover .cls-16,
+.level:not(.level--current):hover path, .level:not(.level--current):hover rect, .level:not(.level--current):hover polygon,
+.level:not(.level--current):hover polyline, .level:not(.level--current):hover line, .level:not(.level--current):hover circle {
+	stroke: #515158;
+	stroke-width: 0.75px;
+	stroke-dasharray: none;
+}
+
+/* Exclude icons and level labels from hover effect */
+.level:not(.level--current):hover .icon,
+.level:not(.level--current):hover text,
+.level:not(.level--current):hover .icon--pin,
+.level:not(.level--current):hover .icon--logo {
+	stroke: none;
+	stroke-width: initial;
+}
+
+/* Subtle fill change for hover state - but not when already selected */
+.level:not(.level--current):hover .map__outline,
+.level:not(.level--current):hover path.cls-2, .level:not(.level--current):hover path.cls-4,
+.level:not(.level--current):hover path.cls-11, .level:not(.level--current):hover path.cls-12,
+.level:not(.level--current):hover path.cls-16 {
+	fill: #8a8a91;
+}
+
+/* Keep original fill for special elements */
+.level:hover .map__tree {
+	fill: #7bad7f;
 }
 
 .level--current .map__outline {
