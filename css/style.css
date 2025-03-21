@@ -266,19 +266,15 @@ button:focus {
 }
 
 .level--1::after {
-	content: 'L1';
+	content: 'L0';
 }
 
 .level--2::after {
-	content: 'L2';
+	content: 'L1';
 }
 
 .level--3::after {
-	content: 'L3';
-}
-
-.level--4::after {
-	content: 'L4';
+	content: 'L2';
 }
 
 .level:not(:first-child) {
@@ -531,19 +527,31 @@ button:focus {
 }
 
 .content__item[data-category='1'] .content__item-title {
-	color: #7cbf7f;
+	color: #0D5332;
 }
 
 .content__item[data-category='2'] .content__item-title {
-	color: #6584c7;
+	color: #78c8e6;
 }
 
 .content__item[data-category='3'] .content__item-title {
-	color: #dc4b7c;
+	color: #B7E1A1;
 }
 
 .content__item[data-category='4'] .content__item-title {
-	color: #8d65e0;
+	color: #cd3f8b;
+}
+
+.content__item[data-category='5'] .content__item-title {
+	color: #ffc300;
+}
+
+.content__item[data-category='6'] .content__item-title {
+	color: #2EA38D;
+}
+
+.content__item[data-category='7'] .content__item-title {
+	color: #EA9344;
 }
 
 .content__item--hover .content__item-title {
@@ -691,7 +699,13 @@ button:focus {
 .grouped-by-category [data-category='3']:first-child,
 .grouped-by-category :not([data-category='3']) + [data-category='3'],
 .grouped-by-category [data-category='4']:first-child,
-.grouped-by-category :not([data-category='4']) + [data-category='4'] {
+.grouped-by-category :not([data-category='4']) + [data-category='4'],
+.grouped-by-category [data-category='5']:first-child,
+.grouped-by-category :not([data-category='5']) + [data-category='5'],
+.grouped-by-category [data-category='6']:first-child,
+.grouped-by-category :not([data-category='6']) + [data-category='6'],
+.grouped-by-category [data-category='7']:first-child,
+.grouped-by-category :not([data-category='7']) + [data-category='7'] {
 	margin-top: 4em;
 }
 
@@ -710,28 +724,46 @@ button:focus {
 	color: #c7c7c9;
 }
 
-.grouped-by-category [data-category='1']:first-child::before,
-.grouped-by-category :not([data-category='1']) + [data-category='1']::before {
-	content: 'Training & Meeting';
-	color: #7cbf7f;
-}
-
 .grouped-by-category [data-category='2']:first-child::before,
 .grouped-by-category :not([data-category='2']) + [data-category='2']::before {
-	content: 'Industrial/Manufacturing';
-	color: #6584c7;
+	content: 'Training & Meeting';
+	color: #78c8e6;
 }
 
-.grouped-by-category [data-category='3']:first-child::before,
-.grouped-by-category :not([data-category='3']) + [data-category='3']::before {
-	content: 'Facilities';
-	color: #dc4b7c;
+.grouped-by-category [data-category='6']:first-child::before,
+.grouped-by-category :not([data-category='6']) + [data-category='6']::before {
+	content: 'Tenants';
+	color: #2EA38D;
+}
+
+.grouped-by-category [data-category='5']:first-child::before,
+.grouped-by-category :not([data-category='5']) + [data-category='5']::before {
+	content: 'RXN HUB';
+	color: #ffc300;
 }
 
 .grouped-by-category [data-category='4']:first-child::before,
 .grouped-by-category :not([data-category='4']) + [data-category='4']::before {
-	content: 'Commercial';
-	color: #8d65e0;
+	content: 'Offices & Cowork Space';
+	color: #cd3f8b;
+}
+
+.grouped-by-category [data-category='3']:first-child::before,
+.grouped-by-category :not([data-category='3']) + [data-category='3']::before {
+	content: 'Available Spaces';
+	color: #B7E1A1;
+}
+
+.grouped-by-category [data-category='7']:first-child::before,
+.grouped-by-category :not([data-category='7']) + [data-category='7']::before {
+	content: 'Ammenities';
+	color: #EA9344;
+}
+
+.grouped-by-category [data-category='1']:first-child::before,
+.grouped-by-category :not([data-category='1']) + [data-category='1']::before {
+	content: 'Facilities';
+	color: #0D5332;
 }
 
 .list__item::after {
@@ -840,16 +872,25 @@ button:focus {
 }
 
 .pin[data-category='1'] .icon--pin {
-	fill: #7cbf7f;
+	fill: #0D5332;
 }
 .pin[data-category='2'] .icon--pin {
-	fill: #6584c7;
+	fill: #78c8e6;
 }
 .pin[data-category='3'] .icon--pin {
-	fill: #dc4b7c;
+	fill: #B7E1A1;
 }
 .pin[data-category='4'] .icon--pin {
-	fill: #8d65e0;
+	fill: #cd3f8b;
+}
+.pin[data-category='5'] .icon--pin {
+	fill: #ffc300;
+}
+.pin[data-category='6'] .icon--pin {
+	fill: #2EA38D;
+}
+.pin[data-category='7'] .icon--pin {
+	fill: #EA9344;
 }
 
 .pin--active .icon--pin {
