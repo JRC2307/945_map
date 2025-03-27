@@ -70,7 +70,7 @@
 		// content element
 		contentEl = document.querySelector('.content'),
 		// content close ctrl
-		contentCloseCtrl = contentEl.querySelector('button.content__button'),
+		contentCloseCtrl = null, // We'll set this dynamically when content opens
 		// check if a content item is opened
 		isOpenContentArea,
 		// check if currently animating/navigating
@@ -160,12 +160,35 @@
 			});
 		});
 
-		// closing the content area
-		if (contentCloseCtrl) {
-			contentCloseCtrl.addEventListener('click', function() {
+		// Add close buttons to all content items and attach event listeners
+		var contentItems = document.querySelectorAll('.content__item');
+		contentItems.forEach(function(item) {
+			// Check if this item already has a close button
+			if (!item.querySelector('.content__close-btn')) {
+				// Create close button
+				var closeBtn = document.createElement('button');
+				closeBtn.className = 'boxbutton boxbutton--dark content__close-btn';
+				closeBtn.setAttribute('aria-label', 'Close content');
+				closeBtn.innerHTML = '<svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg>';
+				
+				// Add event listener
+				closeBtn.addEventListener('click', function() {
+					closeContentArea();
+				});
+				
+				// Add to content item as first child
+				item.insertBefore(closeBtn, item.firstChild);
+			}
+		});
+		
+		// Also add event listeners to any existing close buttons
+		var closeButtons = document.querySelectorAll('.content__close-btn');
+		closeButtons.forEach(function(btn) {
+			// Make sure it has an event listener
+			btn.addEventListener('click', function() {
 				closeContentArea();
 			});
-		}
+		});
 
 		// clicking on a listed space: open level - shows space
 		spaces.forEach(function(space) {
@@ -480,10 +503,7 @@
 		isOpenContentArea = true;
 		// shows space
 		showSpace(true);
-		// show close ctrl - only if it exists
-		if (contentCloseCtrl) {
-			classie.remove(contentCloseCtrl, 'content__button--hidden');
-		}
+		// No need to show/hide close button as it's part of the content item
 		// resize mall area
 		classie.add(mall, 'mall--content-open');
 		// Keep navigation controls accessible instead of disabling them
