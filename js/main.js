@@ -154,9 +154,12 @@
 			pin.addEventListener('click', function(ev) {
 				ev.preventDefault();
 				// open content for this pin
-				openContent(pin.getAttribute('data-space'));
+				var spaceId = pin.getAttribute('data-space');
+				openContent(spaceId);
 				// remove hover class (showing the title)
 				classie.remove(contentItem, 'content__item--hover');
+				// highlight the corresponding floor area
+				highlightFloorArea(spaceId);
 			});
 		});
 
@@ -823,13 +826,104 @@
 	// Add pin adjustment tool
 	setTimeout(addPinAdjustmentTool, 1000);
 	
+	// Function to highlight floor areas when pins are clicked
+	function highlightFloorArea(spaceId) {
+		// First, remove any existing highlights
+		const allHighlightedAreas = document.querySelectorAll('.highlighted-area');
+		allHighlightedAreas.forEach(area => {
+			area.classList.remove('highlighted-area');
+		});
+		
+		// Log the space ID for debugging
+		console.log(`Looking for floor area with space ID: ${spaceId}`);
+		
+		// Find the SVG element with the matching data-space or id attribute
+		const levels = document.querySelectorAll('.level');
+		let found = false;
+		
+		levels.forEach(level => {
+			// Try different matching strategies
+			let area = null;
+			
+			// Strategy 1: Exact data-space match
+			area = level.querySelector(`[data-space="${spaceId}"]`);
+			
+			// Strategy 2: ID with underscore prefix match
+			if (!area) {
+				area = level.querySelector(`[id="_${spaceId}"]`);
+			}
+			
+			// Strategy 3: ID equals the space ID
+			if (!area) {
+				area = level.querySelector(`[id="${spaceId}"]`);
+			}
+			
+			// Strategy 4: Check all IDs that contain the space ID
+			if (!area) {
+				const possibleAreas = Array.from(level.querySelectorAll('[id]'));
+				
+				// Sort by ID length to prioritize closer matches
+				possibleAreas.sort((a, b) => a.id.length - b.id.length);
+				
+				for (const possibleArea of possibleAreas) {
+					// Check if ID contains the space ID
+					if (possibleArea.id.includes(spaceId)) {
+						area = possibleArea;
+						console.log(`Found area by partial ID match: ${possibleArea.id}`);
+						break;
+					}
+				}
+			}
+			
+			// Strategy 5: Check for data-name attribute
+			if (!area) {
+				const dataNameElements = level.querySelectorAll('[data-name]');
+				for (const element of dataNameElements) {
+					if (element.getAttribute('data-name').includes(spaceId)) {
+						area = element;
+						console.log(`Found area by data-name: ${element.getAttribute('data-name')}`);
+						break;
+					}
+				}
+			}
+			
+			// If an area is found, highlight it
+			if (area) {
+				console.log(`Highlighting area: ${area.id || area.getAttribute('data-space') || 'unnamed'}`);
+				area.classList.add('highlighted-area');
+				found = true;
+				
+				// Make sure the area is visible by scrolling to it if needed
+				area.scrollIntoView({ behavior: 'smooth', block: 'center' });
+			}
+		});
+		
+		// If no area was found, try one more approach with partial class matching
+		if (!found) {
+			// Look for elements with class names that might contain the space ID
+			const allElements = document.querySelectorAll('path, polygon, polyline, rect');
+			for (const element of allElements) {
+				if (element.id && element.id.includes(spaceId.replace('.', ''))) {
+					console.log(`Found area by ID without dots: ${element.id}`);
+					element.classList.add('highlighted-area');
+					found = true;
+					break;
+				}
+			}
+		}
+		
+		if (!found) {
+			console.log(`No matching area found for space ID: ${spaceId}`);
+		}
+	}
+	
 	// Function to enable manual pin adjustment in the browser
 	function addPinAdjustmentTool() {
 		// Create UI controls for adjustment mode
 		const controlPanel = document.createElement('div');
 		controlPanel.style.position = 'fixed';
 		controlPanel.style.top = '10px';
-		controlPanel.style.right = '10px';
+		controlPanel.style.left = '10px';
 		controlPanel.style.zIndex = '9999';
 		controlPanel.style.background = 'rgba(255, 255, 255, 0.9)';
 		controlPanel.style.padding = '10px';
@@ -842,7 +936,7 @@
 		toggleButton.textContent = 'Pin Adjustment Mode';
 		toggleButton.style.position = 'fixed';
 		toggleButton.style.top = '10px';
-		toggleButton.style.right = '10px';
+		toggleButton.style.left = '10px';
 		toggleButton.style.zIndex = '10000';
 		toggleButton.style.padding = '5px 10px';
 		toggleButton.style.background = '#007bff';

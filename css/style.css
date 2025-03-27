@@ -184,7 +184,7 @@ button:focus {
 }
 
 .surroundings {
-	width: 192vmin;
+	width: 200vmin;
 	/* double of mall map */
 	height: 128vmin;
 	margin: -64vmin 0 0 -96vmin;
@@ -978,6 +978,8 @@ button:focus {
 	transform-origin: 50% 100%;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	filter: drop-shadow(0 0 0.5vmin rgba(0,0,0,0.5));
+	transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .pin__icon {
@@ -1108,13 +1110,20 @@ button:focus {
 	width: 50%;
 	height: 50%;
 	fill: white;
-	fill-opacity: 0.6;
-	-webkit-transition: fill-opacity 0.3s;
-	transition: fill-opacity 0.3s;
+	fill-opacity: 0.8;
+	-webkit-transition: fill-opacity 0.3s, transform 0.3s;
+	transition: fill-opacity 0.3s, transform 0.3s;
+	stroke: rgba(0,0,0,0.5);
+	stroke-width: 2px;
 }
 
 .pin--active .icon--logo,
 .pin:hover .icon--logo {
+	fill-opacity: 1;
+}
+
+.pin--active .icon--pin,
+.pin:hover .icon--pin {
 	fill-opacity: 1;
 }
 
@@ -1479,5 +1488,38 @@ button:focus {
 
 	.content__item {
 		pointer-events: auto;
+	}
+}
+
+/* Pin hover effects */
+.pin:hover {
+	filter: drop-shadow(0 0 1vmin rgba(0,0,0,0.7));
+	z-index: 1000;
+	transform: rotateZ(-20deg) rotateZ(45deg) rotateX(-70deg) scale(1.2);
+}
+
+.pin:hover .icon--pin {
+	stroke-width: 3px;
+}
+
+/* Highlighted floor area styles */
+.highlighted-area {
+	stroke: #222222 !important;
+	stroke-width: 4px !important;
+	fill-opacity: 0.8 !important;
+	animation: pulse-highlight 1.5s infinite alternate;
+	filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.7));
+	z-index: 999 !important;
+	pointer-events: auto !important;
+}
+
+@keyframes pulse-highlight {
+	from {
+		stroke-width: 4px;
+		fill-opacity: 0.8;
+	}
+	to {
+		stroke-width: 6px;
+		fill-opacity: 0.9;
 	}
 }
