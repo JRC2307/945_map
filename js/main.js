@@ -161,9 +161,11 @@
 		});
 
 		// closing the content area
-		contentCloseCtrl.addEventListener('click', function() {
-			closeContentArea();
-		});
+		if (contentCloseCtrl) {
+			contentCloseCtrl.addEventListener('click', function() {
+				closeContentArea();
+			});
+		}
 
 		// clicking on a listed space: open level - shows space
 		spaces.forEach(function(space) {
@@ -183,14 +185,40 @@
 		});
 
 		// smaller screens: open the search bar
-		openSearchCtrl.addEventListener('click', function() {
-			openSearch();
-		});
+		if (openSearchCtrl) {
+			// Use touchstart for better mobile responsiveness
+			openSearchCtrl.addEventListener('touchstart', function(ev) {
+				ev.preventDefault();
+				openSearch();
+			});
+
+			// Fallback to click for desktop
+			openSearchCtrl.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				openSearch();
+			});
+
+			// Ensure the button is properly initialized
+			openSearchCtrl.style.pointerEvents = 'auto';
+		}
 
 		// smaller screens: close the search bar
-		closeSearchCtrl.addEventListener('click', function() {
-			closeSearch();
-		});
+		if (closeSearchCtrl) {
+			// Use touchstart for better mobile responsiveness
+			closeSearchCtrl.addEventListener('touchstart', function(ev) {
+				ev.preventDefault();
+				closeSearch();
+			});
+
+			// Fallback to click for desktop
+			closeSearchCtrl.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				closeSearch();
+			});
+
+			// Ensure the button is properly initialized
+			closeSearchCtrl.style.pointerEvents = 'auto';
+		}
 	}
 
 	/**
@@ -509,16 +537,37 @@
 		// shows all levels - we want to show all the spaces for smaller screens 
 		showAllLevels();
 
+		// Force a reflow to ensure CSS transitions work properly
+		void spacesListEl.offsetWidth;
+
+		// Add classes to show the search menu
 		classie.add(spacesListEl, 'spaces-list--open');
 		classie.add(containerEl, 'container--overflow');
+		
+		// Ensure the search input is focused for better UX
+		setTimeout(function() {
+			var searchInput = spacesListEl.querySelector('.search__input');
+			if (searchInput) {
+				searchInput.focus();
+			}
+		}, 300);
 	}
 
 	/**
 	 * for smaller screens: close search bar
 	 */
 	function closeSearch() {
+		// Force a reflow to ensure CSS transitions work properly
+		void spacesListEl.offsetWidth;
+
+		// Remove classes to hide the search menu
 		classie.remove(spacesListEl, 'spaces-list--open');
 		classie.remove(containerEl, 'container--overflow');
+		
+		// Blur any focused elements
+		if (document.activeElement) {
+			document.activeElement.blur();
+		}
 	}
 	
 	init();

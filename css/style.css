@@ -134,7 +134,7 @@ button:focus {
 	line-height: 1;
 	margin: 0 5px;
 	text-transform: none;
-	speak: none;
+	/* speak: none; */
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -636,7 +636,7 @@ button:focus {
 .content__meta-item {
 	display: inline-block;
 	padding: 0 0.25em;
-	color: ;
+	color: inherit;
 }
 
 .content__meta .icon {
@@ -1251,12 +1251,16 @@ button:focus {
 	.spaces-list,
 	.search {
 		width: 100vw;
-		right: 100%;
+		right: 0;
 		left: auto;
+		transform: translateX(100%);
+		transition: transform 0.3s;
 	}
 	.spaces-list--open,
 	.spaces-list--open .search {
 		right: 0;
+		transform: translateX(0);
+		transition: transform 0.3s;
 	}
 	.open-search,
 	.close-search {
@@ -1283,3 +1287,33 @@ button:focus {
 		text-align: left;
 	}
 
+/* Mobile-specific enhancements */
+@media screen and (max-width: 65em) {
+	.open-search {
+		cursor: pointer;
+		touch-action: manipulation;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+
+	/* Ensure the search button is easily tappable */
+	.open-search .icon--search {
+		pointer-events: none;
+	}
+}
+
+/* Additional mobile fixes */
+@media screen and (max-width: 65em) {
+	/* Ensure search button is visible and clickable */
+	.open-search {
+		position: fixed;
+		z-index: 1001;
+		cursor: pointer;
+		touch-action: manipulation;
+	}
+
+	/* Improve tap target size */
+	.boxbutton {
+		min-width: 50px;
+		min-height: 50px;
+	}
+}
