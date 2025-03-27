@@ -260,7 +260,12 @@
 
 		classie.add(mallLevelsEl, 'levels--selected-' + selectedLevel);
 		
-		// the level element
+		// Ensure selectedLevel is at least 1 to prevent negative array index
+		if (selectedLevel < 1) {
+			selectedLevel = 1;
+		}
+		
+		// the level element (array is 0-indexed, but levels are 1-indexed)
 		var levelEl = mallLevels[selectedLevel - 1];
 		// Check if level element exists before using it
 		if (!levelEl) {

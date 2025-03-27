@@ -277,12 +277,38 @@ button:focus {
 	content: 'L0';
 }
 
+/* Building outline for Level 0 */
+.level--1 .cls-8,
+.level--1 #L0-Outline_01,
+.level--1 #L0_Building_02 {
+	stroke: #000;
+	stroke-width: 2px;
+	stroke-linejoin: round;
+}
+
 .level--2::after {
 	content: 'L1';
 }
 
+/* Building outline for Level 1 */
+.level--2 #L1_Outline polyline,
+.level--2 .cls-2 {
+	stroke: #000;
+	stroke-width: 2px;
+	stroke-linejoin: round;
+}
+
 .level--3::after {
 	content: 'L2';
+}
+
+/* Building outline for Level 2 */
+.level--3 #L2_Building_Outline,
+.level--3 #L2_outline_B2,
+.level--3 #L2_Outline_B1 {
+	stroke: #000;
+	stroke-width: 2px;
+	stroke-linejoin: round;
 }
 
 .level:not(:first-child) {
