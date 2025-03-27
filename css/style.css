@@ -281,8 +281,8 @@ button:focus {
 .level--1 .cls-8,
 .level--1 #L0-Outline_01,
 .level--1 #L0_Building_02 {
-	stroke: #000;
-	stroke-width: 2px;
+	stroke: #272727;
+	stroke-width: 4px;	
 	stroke-linejoin: round;
 }
 
@@ -293,8 +293,8 @@ button:focus {
 /* Building outline for Level 1 */
 .level--2 #L1_Outline polyline,
 .level--2 .cls-2 {
-	stroke: #000;
-	stroke-width: 2px;
+	stroke: #272727;
+	stroke-width: 4px;
 	stroke-linejoin: round;
 }
 
@@ -306,8 +306,8 @@ button:focus {
 .level--3 #L2_Building_Outline,
 .level--3 #L2_outline_B2,
 .level--3 #L2_Outline_B1 {
-	stroke: #000;
-	stroke-width: 2px;
+	stroke: #272727;
+	stroke-width: 4px;
 	stroke-linejoin: round;
 }
 
@@ -994,6 +994,42 @@ button:focus {
 	transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
 
+/* Pin colors by category */
+/* Training & Meeting - Category 2 */
+.pin[data-category="2"] .icon--pin {
+	fill: #78c8e6 !important;
+}
+
+/* Tenants - Category 6 */
+.pin[data-category="6"] .icon--pin {
+	fill: #2EA38D !important;
+}
+
+/* RXN HUB - Category 5 */
+.pin[data-category="5"] .icon--pin {
+	fill: #ffc300 !important;
+}
+
+/* Offices & Cowork Space - Category 4 */
+.pin[data-category="4"] .icon--pin {
+	fill: #cd3f8b !important;
+}
+
+/* Available Spaces - Category 3 */
+.pin[data-category="3"] .icon--pin {
+	fill: #B7E1A1 !important;
+}
+
+/* Ammenities - Category 7 */
+.pin[data-category="7"] .icon--pin {
+	fill: #EA9344 !important;
+}
+
+/* Facilities - Category 1 */
+.pin[data-category="1"] .icon--pin {
+	fill: #0D5332 !important;
+}
+
 .level__pins--active .pin__icon {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
@@ -1083,8 +1119,10 @@ button:focus {
 }
 
 /* Pins for floor 0 - Ground Level */
-.pin--0-1 { top: 40vmin; left: 60vmin; } /* Bathroom L001 */
-.pin--0-2 { top: 45vmin; left: 35vmin; } /* M0001 - Training & Meeting 1 */
+.pin--0-1 { top: 10	0vmin; left: 60vmin; } /* Bathroom L001 */
+
+
+.pin--0-2 { top: 50vmin; left: 35vmin; } /* M0001 - Training & Meeting 1 */
 .pin--0-3 { top: 50vmin; left: 40vmin; } /* M0002 - Training & Meeting 2 */
 .pin--0-4 { top: 55vmin; left: 45vmin; } /* M0003 - Training & Meeting 3 */
 .pin--0-5 { top: 48vmin; left: 65vmin; } /* E0001 - Available Commercial Space */
@@ -1421,6 +1459,7 @@ button:focus {
 		cursor: pointer;
 		touch-action: manipulation;
 	}
+}
 
 	/* Improve tap target size */
 	.boxbutton {
