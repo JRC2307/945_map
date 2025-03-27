@@ -461,6 +461,16 @@ button:focus {
 }
 
 /* Apply hover effects to all SVG shapes - but not when already selected */
+/* Don't apply hover effects to the level indicators (L0, L1, L2) */
+.level--1::after,
+.level--2::after,
+.level--3::after {
+	transition: none !important;
+	stroke: none !important;
+	stroke-width: 0 !important;
+	pointer-events: none;
+}
+
 .level:not(.level--current):hover .map__outline,
 .level:not(.level--current):hover .cls-1, .level:not(.level--current):hover .cls-2, .level:not(.level--current):hover .cls-3,
 .level:not(.level--current):hover .cls-4, .level:not(.level--current):hover .cls-5, .level:not(.level--current):hover .cls-6,
