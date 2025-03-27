@@ -408,6 +408,8 @@ button:focus {
 	text-align: center;
 	-webkit-transition: opacity 0.8s;
 	transition: opacity 0.8s;
+	z-index: 1000; /* Higher z-index to ensure it's above content */
+	pointer-events: auto; /* Ensure it always receives pointer events */
 }
 
 .mallnav--hidden {
@@ -540,6 +542,7 @@ button:focus {
 	top: 100%;
 	width: 100%;
 	height: 50%;
+	z-index: 900; /* Add z-index to control stacking order */
 }
 
 .content__item {
@@ -559,6 +562,17 @@ button:focus {
 .content--open .content__item {
 	-webkit-transition: none;
 	transition: none;
+	pointer-events: auto;
+}
+
+/* Ensure navigation buttons are always clickable */
+.mall--content-open .mallnav {
+	pointer-events: auto !important;
+	z-index: 1100; /* Even higher z-index when content is open */
+}
+
+.boxbutton {
+	pointer-events: auto !important; /* Ensure buttons always receive clicks */
 }
 
 .content__item--current {
@@ -1315,5 +1329,20 @@ button:focus {
 	.boxbutton {
 		min-width: 50px;
 		min-height: 50px;
+	}
+
+	/* Ensure navigation buttons are always on top and clickable in mobile */
+	.mallnav {
+		z-index: 1200;
+		pointer-events: auto !important;
+	}
+
+	/* Prevent content from blocking navigation in mobile */
+	.content {
+		pointer-events: none;
+	}
+
+	.content__item {
+		pointer-events: auto;
 	}
 }

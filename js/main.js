@@ -239,6 +239,11 @@
 		
 		// the level element
 		var levelEl = mallLevels[selectedLevel - 1];
+		// Check if level element exists before using it
+		if (!levelEl) {
+			console.warn('Level ' + selectedLevel + ' does not exist');
+			return false;
+		}
 		classie.add(levelEl, 'level--current');
 
 		onEndTransition(levelEl, function() {
@@ -354,7 +359,8 @@
 	 * Navigate through the mall´s levels
 	 */
 	function navigate(direction) {
-		if( isNavigating || !isExpanded || isOpenContentArea ) {
+		// Allow navigation even when content is open by removing the isOpenContentArea check
+		if( isNavigating || !isExpanded ) {
 			return false;
 		}
 		isNavigating = true;
@@ -446,15 +452,25 @@
 			classie.remove(activeItem, 'list__item--active');
 		}
 		// list item gets class active
-		classie.add(spacesEl.querySelector('li[data-space="' + spacerefval + '"]'), 'list__item--active');
-
-		// remove class selected (if any) from current space
-		var activeSpaceArea = mallLevels[selectedLevel - 1].querySelector('svg > .map__space--selected');
-		if( activeSpaceArea ) {
-			classie.remove(activeSpaceArea, 'map__space--selected');
+		var listItem = spacesEl.querySelector('li[data-space="' + spacerefval + '"]');
+		if (listItem) {
+			classie.add(listItem, 'list__item--active');
 		}
-		// svg area gets selected
-		classie.add(mallLevels[selectedLevel - 1].querySelector('svg > .map__space[data-space="' + spaceref + '"]'), 'map__space--selected');
+
+		// Check if the selected level exists
+		if (mallLevels[selectedLevel - 1]) {
+			// remove class selected (if any) from current space
+			var activeSpaceArea = mallLevels[selectedLevel - 1].querySelector('svg > .map__space--selected');
+			if (activeSpaceArea) {
+				classie.remove(activeSpaceArea, 'map__space--selected');
+			}
+			
+			// svg area gets selected - only if it exists
+			var spaceToSelect = mallLevels[selectedLevel - 1].querySelector('svg > .map__space[data-space="' + spaceref + '"]');
+			if (spaceToSelect) {
+				classie.add(spaceToSelect, 'map__space--selected');
+			}
+		}
 	}
 
 	/**
@@ -464,13 +480,15 @@
 		isOpenContentArea = true;
 		// shows space
 		showSpace(true);
-		// show close ctrl
-		classie.remove(contentCloseCtrl, 'content__button--hidden');
+		// show close ctrl - only if it exists
+		if (contentCloseCtrl) {
+			classie.remove(contentCloseCtrl, 'content__button--hidden');
+		}
 		// resize mall area
 		classie.add(mall, 'mall--content-open');
-		// disable mall nav ctrls
-		classie.add(levelDownCtrl, 'boxbutton--disabled');
-		classie.add(levelUpCtrl, 'boxbutton--disabled');
+		// Keep navigation controls accessible instead of disabling them
+		// This allows users to navigate between levels even when content is open
+		setNavigationState();
 	}
 
 	/**
@@ -497,8 +515,10 @@
 		classie.remove(contentEl, 'content--open');
 		// close current space
 		hideSpace();
-		// hide close ctrl
-		classie.add(contentCloseCtrl, 'content__button--hidden');
+		// hide close ctrl - only if it exists
+		if (contentCloseCtrl) {
+			classie.add(contentCloseCtrl, 'content__button--hidden');
+		}
 		// resize mall area
 		classie.remove(mall, 'mall--content-open');
 		// enable mall nav ctrls
