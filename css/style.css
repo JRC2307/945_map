@@ -1119,47 +1119,46 @@ button:focus {
 }
 
 /* Pins for floor 0 - Ground Level */
-.pin--0-1 { top: 10	0vmin; left: 60vmin; } /* Bathroom L001 */
-
-
-.pin--0-2 { top: 50vmin; left: 35vmin; } /* M0001 - Training & Meeting 1 */
-.pin--0-3 { top: 50vmin; left: 40vmin; } /* M0002 - Training & Meeting 2 */
-.pin--0-4 { top: 55vmin; left: 45vmin; } /* M0003 - Training & Meeting 3 */
-.pin--0-5 { top: 48vmin; left: 65vmin; } /* E0001 - Available Commercial Space */
-.pin--0-6 { top: 38vmin; left: 70vmin; } /* T0001 - Available Industrial/Manufacturing Space */
-.pin--0-7 { top: 68vmin; left: 55vmin; } /* Patio */
+.pin--0-1 { top: 100vmin; left: 60vmin; } /* 40.0900 - Bathroom L001 */
+.pin--0-2 { top: 50vmin; left: 35vmin; } /* 47.0100 - Catalyst Training & Meeting Room */
+.pin--0-3 { top: 50vmin; left: 40vmin; } /* 47.0102 - Bond Training & Meeting Room */
+.pin--0-4 { top: 55vmin; left: 45vmin; } /* 47.0101 - React Training & Meeting Room */
+.pin--0-5 { top: 48vmin; left: 65vmin; } /* 40.0300 - Available Commercial Space */
+.pin--0-6 { top: 38vmin; left: 70vmin; } /* 40.0100 - Available Industrial/Manufacturing Space */
+.pin--0-7 { top: 68vmin; left: 55vmin; } /* 47.0000 - Patio */
 
 /* Pins for floor 1 - Level 1 */
-.pin--1-1 { top: 20vmin; left: 40vmin; } /* T0101 - Fractal Co-Work Space */
-.pin--1-2 { top: 15vmin; left: 70vmin; } /* T0103 - Fractal Private Offices 01 */
-.pin--1-3 { top: 55vmin; left: 75vmin; } /* T0117 - Fractal Private Offices 02 */
-.pin--1-4 { top: 35vmin; left: 60vmin; } /* A0101 - Bathrooms L101 */
-.pin--1-5 { top: 70vmin; left: 40vmin; } /* A0102 - Bathrooms L102 */
-.pin--1-6 { top: 35vmin; left: 25vmin; } /* T0109 - RXN HUB Industrial Wet Lab */
-.pin--1-7 { top: 27vmin; left: 65vmin; } /* RXN HUB Analytical Suite */
-.pin--1-8 { top: 42vmin; left: 55vmin; } /* RXN HUB Pilot Bay Level III */
-.pin--1-9 { top: 15vmin; left: 45vmin; } /* T0110 - RXN HUB Pilot Bay Level I */
-.pin--1-10 { top: 10vmin; left: 35vmin; } /* T0111 - RXN HUB Demo Bay */
-.pin--1-11 { top: 50vmin; left: 20vmin; } /* T0116 - RXN HUB Pilot Bay Level II */
-.pin--1-12 { top: 60vmin; left: 65vmin; } /* T0112 - AirWise */
-.pin--1-13 { top: 50vmin; left: 45vmin; } /* T0106 - Impact Chemistry */
-.pin--1-14 { top: 45vmin; left: 30vmin; } /* T0104 - NTS Labs */
-.pin--1-15 { top: 25vmin; left: 75vmin; } /* T0102 - QU Arts Cons */
-.pin--1-16 { top: 20vmin; left: 20vmin; } /* T0107 - NanoFabrication Kingston */
-.pin--1-17 { top: 55vmin; left: 35vmin; } /* T0105 - Spectra Plasmonics */
-.pin--1-18 { top: 70vmin; left: 50vmin; } /* Enviro-responisble */
-.pin--1-19 { top: 65vmin; left: 55vmin; } /* F0101 - Security Office */
+.pin--1-1 { top: 20vmin; left: 40vmin; } /* 47.1100 - Fractal Co-Work Space */
+.pin--1-2 { top: 15vmin; left: 70vmin; } /* 40.1200 - Fractal Private Offices 01 */
+.pin--1-3 { top: 55vmin; left: 75vmin; } /* 40.1300 - Fractal Private Offices 02 */
+.pin--1-4 { top: 35vmin; left: 60vmin; } /* 48.1900 - Bathrooms L101 */
+.pin--1-5 { top: 70vmin; left: 40vmin; } /* 48.1800 - Bathrooms L102 */
+.pin--1-6 { top: 35vmin; left: 25vmin; } /* 42.1101 - RXN HUB Industrial Wet Lab */
+.pin--1-7 { top: 27vmin; left: 65vmin; } /* 42.1102 - RXN HUB Analytical Suite */
+.pin--1-8 { top: 42vmin; left: 55vmin; } /* 42.1103 - RXN HUB Pilot Bay Level III */
+.pin--1-9 { top: 15vmin; left: 45vmin; } /* 45.1100 - RXN HUB Pilot Bay Level I */
+.pin--1-10 { top: 10vmin; left: 35vmin; } /* 46.1100 - RXN HUB Demo Bay */
+.pin--1-11 { top: 50vmin; left: 20vmin; } /* 43.1400 - RXN HUB Pilot Bay Level II */
+.pin--1-12 { top: 60vmin; left: 65vmin; } /* 44.1100 - AirWise */
+.pin--1-13 { top: 50vmin; left: 45vmin; } /* 43.1700 - Impact Chemistry */
+.pin--1-14 { top: 45vmin; left: 30vmin; } /* 43.1101 - NTS Labs 02 */
+.pin--1-15 { top: 25vmin; left: 75vmin; } /* 47.1200 - QU Arts Cons */
+.pin--1-16 { top: 20vmin; left: 20vmin; } /* 41.1100 - NanoFabrication Kingston */
+.pin--1-17 { top: 55vmin; left: 35vmin; } /* 43.1300 - Spectra Plasmonics */
+.pin--1-18 { top: 70vmin; left: 50vmin; } /* 40.1101 - Enviro-responsible */
+.pin--1-19 { top: 65vmin; left: 55vmin; } /* 47.1911 - Security Office */
 
 /* Level 2 pins */
-.pin--2-1 { top: 30vmin; left: 60vmin; } /* Bathroom L2 */
-.pin--2-2 { top: 50vmin; left: 70vmin; } /* Fractal Suites 40.2701 */
-.pin--2-3 { top: 35vmin; left: 65vmin; } /* Fractal Suites 40.2702 */
-.pin--2-4 { top: 40vmin; left: 40vmin; } /* Available Space 40.2703 */
-.pin--2-5 { top: 55vmin; left: 45vmin; } /* Available Space 40.2704 */
-.pin--2-6 { top: 25vmin; left: 65vmin; } /* Buchi */
-.pin--2-7 { top: 35vmin; left: 55vmin; } /* Sparq Systems */
-.pin--2-8 { top: 30vmin; left: 70vmin; } /* Impact Chemistry */
-.pin--2-9 { top: 20vmin; left: 45vmin; } /* RXN HUB */
+.pin--2-1 { top: 30vmin; left: 60vmin; } /* 40.2902 - Bathroom L201 */
+.pin--2-2 { top: 50vmin; left: 70vmin; } /* 40.2701 - Fractal Custom Suites 01 */
+.pin--2-3 { top: 35vmin; left: 65vmin; } /* 40.2702 - Fractal Custom Suites 02 */
+.pin--2-4 { top: 40vmin; left: 40vmin; } /* 40.2703 - Available Space */
+.pin--2-5 { top: 55vmin; left: 45vmin; } /* 40.2704 - Available Space */
+.pin--2-6 { top: 25vmin; left: 65vmin; } /* 40.2800 - Buchi */
+.pin--2-7 { top: 35vmin; left: 55vmin; } /* 43.2103 - Sparq Systems */
+.pin--2-8 { top: 30vmin; left: 70vmin; } /* 43.2300 - Impact Chemistry */
+.pin--2-9 { top: 20vmin; left: 45vmin; } /* 47.2102 - RXN HUB Demo Bay */
+.pin--2-10 { top: 25vmin; left: 50vmin; } /* 49.2100 - Airwise Sales Inc. */
 
 /* Level 0 styles */
 .level--1 .cls-1 {
