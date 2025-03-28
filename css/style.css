@@ -282,7 +282,7 @@ button:focus {
 .level--1 #L0-Outline_01,
 .level--1 #L0_Building_02 {
 	stroke: #9c9c9c;
-	stroke-width: 10px;	
+	stroke-width: 14px;	
 	stroke-linejoin: round;
 }
 
@@ -294,7 +294,7 @@ button:focus {
 .level--2 #L1_Outline polyline,
 .level--2 .cls-2 {
 	stroke: #9c9c9c;
-	stroke-width: 10px;
+	stroke-width: 14px;
 	stroke-linejoin: round;
 }
 
@@ -307,7 +307,7 @@ button:focus {
 .level--3 #L2_outline_B2,
 .level--3 #L2_Outline_B1 {
 	stroke: #9c9c9c;
-	stroke-width: 10px;
+	stroke-width: 14px;
 	stroke-linejoin: round;
 }
 
@@ -497,6 +497,28 @@ button:focus {
 	stroke: none !important;
 	stroke-width: 0 !important;
 	pointer-events: none;
+}
+
+/* Make building elements visually indicate they're clickable */
+.level svg [class^="cls-"],
+.level svg [id^="_"],
+.level svg [data-space],
+.level svg g[id] path,
+.level svg g[id] polygon,
+.level svg g[id] rect {
+	cursor: pointer;
+}
+
+/* Disable visual indication on building outlines */
+.level svg polyline,
+.level svg #L0_Outline,
+.level svg #L1_Outline,
+.level svg #L2_Outline,
+.level svg #L2_Building_Outline,
+.level svg #L2_outline_B2,
+.level svg #L2_Outline_B1,
+.level svg g[id$="Outline"] {
+	cursor: default;
 }
 
 .level:not(.level--current):hover .map__outline,

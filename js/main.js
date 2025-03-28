@@ -109,9 +109,36 @@
 	function initEvents() {
 		// click on a Mall´s level
 		mallLevels.forEach(function(level, pos) {
-			level.addEventListener('click', function() {
-				// shows this level
-				showLevel(pos+1);
+			level.addEventListener('click', function(event) {
+				// If we clicked on a pin, don't navigate
+				if (event.target.closest('.pin')) {
+					return;
+				}
+
+				// Check if we clicked on a polyline or outline element
+				let target = event.target;
+				let isOutline = false;
+
+				// Check if target is a polyline
+				if (target.tagName === 'polyline') {
+					isOutline = true;
+				}
+
+				// Check if target has 'Outline' in its ID
+				if (target.id && target.id.includes('Outline')) {
+					isOutline = true;
+				}
+
+				// Check if parent has 'Outline' in its ID
+				if (target.parentElement && target.parentElement.id && 
+				    target.parentElement.id.includes('Outline')) {
+					isOutline = true;
+				}
+
+				// Only navigate if we didn't click on an outline
+				if (!isOutline) {
+					showLevel(pos+1);
+				}
 			});
 		});
 
