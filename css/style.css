@@ -281,8 +281,8 @@ button:focus {
 .level--1 .cls-8,
 .level--1 #L0-Outline_01,
 .level--1 #L0_Building_02 {
-	stroke: #272727;
-	stroke-width: 4px;	
+	stroke: #9c9c9c;
+	stroke-width: 10px;	
 	stroke-linejoin: round;
 }
 
@@ -293,8 +293,8 @@ button:focus {
 /* Building outline for Level 1 */
 .level--2 #L1_Outline polyline,
 .level--2 .cls-2 {
-	stroke: #272727;
-	stroke-width: 4px;
+	stroke: #9c9c9c;
+	stroke-width: 10px;
 	stroke-linejoin: round;
 }
 
@@ -306,8 +306,8 @@ button:focus {
 .level--3 #L2_Building_Outline,
 .level--3 #L2_outline_B2,
 .level--3 #L2_Outline_B1 {
-	stroke: #272727;
-	stroke-width: 4px;
+	stroke: #9c9c9c;
+	stroke-width: 10px;
 	stroke-linejoin: round;
 }
 

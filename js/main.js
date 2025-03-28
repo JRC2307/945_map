@@ -662,19 +662,19 @@
 			},
 			'47.0100': { 
 				level: 0, 
-				position: { x: 40.79, y: 74.94 }
+				position: { x: 40.29, y: 76.44 }
 			},
 			'47.0102': { 
 				level: 0, 
-				position: { x: 39.61, y: 69.25 }
+				position: { x: 43.11, y: 66.75 }
 			},
 			'47.0101': { 
 				level: 0, 
-				position: { x: 45.33, y: 74.75 }
+				position: { x: 47.33, y: 74.25 }
 			},
 			'47.0300': { 
 				level: 0, 
-				position: { x: 63.02, y: 69.24 }
+				position: { x: 61.52, y: 71.24 }
 			},
 			'44.0101': { 
 				level: 0, 
@@ -682,7 +682,7 @@
 			},
 			'47.0000': { 
 				level: 0, 
-				position: { x: 32.00, y: 75.00 }
+				position: { x: 31.00, y: 75.50 }
 			},
 			'48.1900': { 
 				level: 0, 
@@ -690,19 +690,19 @@
 			},
 			'47.1200': { 
 				level: 0, 
-				position: { x: 43.41, y: 62.45 }
+				position: { x: 40.41, y: 72.45 }
 			},
 			'43.1300': { 
 				level: 0, 
-				position: { x: 62.45, y: 52.65 }
+				position: { x: 70.95, y: 50.15 }
 			},
 			'43.1200': { 
 				level: 0, 
-				position: { x: 67.07, y: 26.07 }
+				position: { x: 63.57, y: 51.07 }
 			},
 			'41.1200': { 
 				level: 0, 
-				position: { x: 35.44, y: 49.68 }
+				position: { x: 34.44, y: 50.18 }
 			},
 			'48.1000': { 
 				level: 0, 
@@ -710,35 +710,35 @@
 			},
 			'44.1100': { 
 				level: 0, 
-				position: { x: 17.73, y: 18.31 }
+				position: { x: 18.23, y: 21.31 }
 			},
 			'47.1100': { 
 				level: 0, 
-				position: { x: 62.42, y: 69.95 }
+				position: { x: 60.92, y: 74.45 }
 			},
 			'42.1101': { 
 				level: 0, 
-				position: { x: 40.85, y: 24.51 }
+				position: { x: 45.35, y: 24.01 }
 			},
 			'42.1102': { 
 				level: 0, 
-				position: { x: 47.04, y: 23.14 }
+				position: { x: 103.54, y: 30.14 }
 			},
 			'43.1400': { 
 				level: 0, 
-				position: { x: 66.62, y: 38.11 }
+				position: { x: 65.62, y: 38.11 }
 			},
 			'40.1900': { 
 				level: 0, 
-				position: { x: 65.17, y: 58.92 }
+				position: { x: 64.67, y: 58.42 }
 			},
-			'1.13': { 
+			'43.1700': { 
 				level: 0, 
-				position: { x: 50.00, y: 50.00 }
+				position: { x: 68.30, y: 24.50 }
 			},
 			'43.1101': { 
 				level: 0, 
-				position: { x: 69.95, y: 55.38 }
+				position: { x: 106.55, y: 33.38 }
 			},
 			'41.1100': { 
 				level: 0, 
@@ -746,47 +746,47 @@
 			},
 			'40.1101': { 
 				level: 0, 
-				position: { x: 70.42, y: 57.34 }
+				position: { x: 68.92, y: 58.84 }
 			},
 			'47.1911': { 
 				level: 0, 
-				position: { x: 54.25, y: 70.60 }
+				position: { x: 54.25, y: 71.10 }
 			},
 			'40.2902': { 
 				level: 0, 
-				position: { x: 72.23, y: 24.24 }
+				position: { x: 64.73, y: 58.74 }
 			},
 			'40.2701': { 
 				level: 0, 
-				position: { x: 42.11, y: 71.83 }
+				position: { x: 64.11, y: 74.33 }
 			},
 			'40.2702': { 
 				level: 0, 
-				position: { x: 43.17, y: 60.08 }
+				position: { x: 93.17, y: 50.08 }
 			},
 			'40.2703': { 
 				level: 0, 
-				position: { x: 59.64, y: 61.53 }
+				position: { x: 38.14, y: 62.03 }
 			},
 			'40.2704': { 
 				level: 0, 
-				position: { x: 61.50, y: 72.76 }
+				position: { x: 39.00, y: 72.26 }
 			},
 			'40.2800': { 
 				level: 0, 
-				position: { x: 70.41, y: 53.76 }
+				position: { x: 69.41, y: 60.76 }
 			},
 			'43.2103': { 
 				level: 0, 
-				position: { x: 65.12, y: 44.62 }
+				position: { x: 62.62, y: 51.12 }
 			},
 			'43.2300': { 
 				level: 0, 
-				position: { x: 63.46, y: 51.58 }
+				position: { x: 91.96, y: 59.58 }
 			},
 			'47.2102': { 
 				level: 0, 
-				position: { x: 50.17, y: 23.79 }
+				position: { x: 105.17, y: 41.79 }
 			},
 			'49.2100': { 
 				level: 0, 
@@ -824,7 +824,7 @@
 	setTimeout(positionPinsByDataSpace, 500);
 	
 	// Add pin adjustment tool
-	setTimeout(addPinAdjustmentTool, 1000);
+
 	
 	// Function to highlight floor areas when pins are clicked
 	function highlightFloorArea(spaceId) {
@@ -917,228 +917,6 @@
 		}
 	}
 	
-	// Function to enable manual pin adjustment in the browser
-	function addPinAdjustmentTool() {
-		// Create UI controls for adjustment mode
-		const controlPanel = document.createElement('div');
-		controlPanel.style.position = 'fixed';
-		controlPanel.style.top = '10px';
-		controlPanel.style.left = '10px';
-		controlPanel.style.zIndex = '9999';
-		controlPanel.style.background = 'rgba(255, 255, 255, 0.9)';
-		controlPanel.style.padding = '10px';
-		controlPanel.style.borderRadius = '5px';
-		controlPanel.style.boxShadow = '0 0 10px rgba(0,0,0,0.2)';
-		controlPanel.style.display = 'none'; // Hidden by default
-		
-		// Toggle button to show/hide the control panel
-		const toggleButton = document.createElement('button');
-		toggleButton.textContent = 'Pin Adjustment Mode';
-		toggleButton.style.position = 'fixed';
-		toggleButton.style.top = '10px';
-		toggleButton.style.left = '10px';
-		toggleButton.style.zIndex = '10000';
-		toggleButton.style.padding = '5px 10px';
-		toggleButton.style.background = '#007bff';
-		toggleButton.style.color = 'white';
-		toggleButton.style.border = 'none';
-		toggleButton.style.borderRadius = '3px';
-		toggleButton.style.cursor = 'pointer';
-		
-		// Add controls to the panel
-		controlPanel.innerHTML = `
-			<h3 style="margin-top: 0;">Pin Adjustment Tool</h3>
-			<p>Click on a pin to select it, then use arrow keys to move it:</p>
-			<ul>
-				<li>Arrow keys: Move 0.5vmin</li>
-				<li>Shift + Arrow keys: Move 0.1vmin</li>
-				<li>Ctrl + Arrow keys: Move 2vmin</li>
-			</ul>
-			<p>Selected pin: <span id="selected-pin-info">None</span></p>
-			<p>Position: <span id="pin-position">-</span></p>
-			<button id="save-positions">Save Positions to Console</button>
-		`;
-		
-		// Add elements to the document
-		document.body.appendChild(toggleButton);
-		document.body.appendChild(controlPanel);
-		
-		// Toggle the control panel
-		toggleButton.addEventListener('click', function() {
-			if (controlPanel.style.display === 'none') {
-				controlPanel.style.display = 'block';
-				enablePinAdjustment();
-				toggleButton.textContent = 'Exit Adjustment Mode';
-			} else {
-				controlPanel.style.display = 'none';
-				disablePinAdjustment();
-				toggleButton.textContent = 'Pin Adjustment Mode';
-			}
-		});
-		
-		// Save button functionality
-		const saveButton = controlPanel.querySelector('#save-positions');
-		saveButton.addEventListener('click', function() {
-			savePinPositions();
-		});
-		
-		// Variables to track state
-		let selectedPin = null;
-		let adjustmentEnabled = false;
-		
-		// Enable pin adjustment
-		function enablePinAdjustment() {
-			adjustmentEnabled = true;
-			
-			// Add click handlers to all pins
-			const pins = document.querySelectorAll('.pin');
-			pins.forEach(pin => {
-				pin.style.cursor = 'pointer';
-				pin.addEventListener('click', selectPin);
-			});
-			
-			// Add keyboard handler
-			document.addEventListener('keydown', handleKeyPress);
-		}
-		
-		// Disable pin adjustment
-		function disablePinAdjustment() {
-			adjustmentEnabled = false;
-			
-			// Remove click handlers from pins
-			const pins = document.querySelectorAll('.pin');
-			pins.forEach(pin => {
-				pin.style.cursor = '';
-				pin.removeEventListener('click', selectPin);
-				pin.style.outline = '';
-			});
-			
-			// Remove keyboard handler
-			document.removeEventListener('keydown', handleKeyPress);
-			
-			// Clear selection
-			selectedPin = null;
-			updateSelectedPinInfo();
-		}
-		
-		// Handle pin selection
-		function selectPin(event) {
-			// Prevent default behavior and propagation
-			event.preventDefault();
-			event.stopPropagation();
-			
-			// Clear previous selection
-			if (selectedPin) {
-				selectedPin.style.outline = '';
-			}
-			
-			// Set new selection
-			selectedPin = this;
-			selectedPin.style.outline = '2px solid red';
-			
-			// Update info display
-			updateSelectedPinInfo();
-			
-			return false;
-		}
-		
-		// Handle keyboard input for moving pins
-		function handleKeyPress(event) {
-			if (!selectedPin || !adjustmentEnabled) return;
-			
-			// Get current position
-			let left = parseFloat(selectedPin.style.left) || 0;
-			let top = parseFloat(selectedPin.style.top) || 0;
-			
-			// Determine movement amount based on modifier keys
-			let moveAmount = 0.5; // Default movement amount (vmin)
-			
-			if (event.shiftKey) {
-				moveAmount = 0.1; // Fine adjustment
-			} else if (event.ctrlKey) {
-				moveAmount = 2; // Large adjustment
-			}
-			
-			// Apply movement based on arrow key
-			switch (event.key) {
-				case 'ArrowLeft':
-					left -= moveAmount;
-					event.preventDefault();
-					break;
-				case 'ArrowRight':
-					left += moveAmount;
-					event.preventDefault();
-					break;
-				case 'ArrowUp':
-					top -= moveAmount;
-					event.preventDefault();
-					break;
-				case 'ArrowDown':
-					top += moveAmount;
-					event.preventDefault();
-					break;
-				default:
-					return; // Not an arrow key, do nothing
-			}
-			
-			// Update pin position
-			selectedPin.style.left = `${left}vmin`;
-			selectedPin.style.top = `${top}vmin`;
-			
-			// Update info display
-			updateSelectedPinInfo();
-		}
-		
-		// Update the display of selected pin info
-		function updateSelectedPinInfo() {
-			const infoSpan = document.getElementById('selected-pin-info');
-			const positionSpan = document.getElementById('pin-position');
-			
-			if (selectedPin) {
-				const dataSpace = selectedPin.getAttribute('data-space') || 'Unknown';
-				const left = parseFloat(selectedPin.style.left) || 0;
-				const top = parseFloat(selectedPin.style.top) || 0;
-				
-				infoSpan.textContent = dataSpace;
-				positionSpan.textContent = `left: ${left.toFixed(2)}vmin, top: ${top.toFixed(2)}vmin`;
-			} else {
-				infoSpan.textContent = 'None';
-				positionSpan.textContent = '-';
-			}
-		}
-		
-		// Save all pin positions to console
-		function savePinPositions() {
-			const pins = document.querySelectorAll('.pin[data-space]');
-			const positions = {};
-			
-			pins.forEach(pin => {
-				const dataSpace = pin.getAttribute('data-space');
-				if (!dataSpace) return;
-				
-				const left = parseFloat(pin.style.left) || 0;
-				const top = parseFloat(pin.style.top) || 0;
-				
-				positions[dataSpace] = { left, top };
-			});
-			
-			// Format as JavaScript object for easy copy-paste
-			const formattedPositions = JSON.stringify(positions, null, 2);
-			console.log('Pin Positions:');
-			console.log(formattedPositions);
-			
-			// Also format as manualMappings object
-			let manualMappingsCode = 'const manualMappings = {\n';
-			for (const [dataSpace, pos] of Object.entries(positions)) {
-				manualMappingsCode += `\t'${dataSpace}': { \n\t\tlevel: 0, // Update level as needed\n\t\tposition: { x: ${pos.left.toFixed(2)}, y: ${pos.top.toFixed(2)} }\n\t},\n`;
-			}
-			manualMappingsCode += '};';
-			
-			console.log('\nManual Mappings Format:');
-			console.log(manualMappingsCode);
-			
-			alert('Pin positions saved to console! Press F12 to view and copy them.');
-		}
-	}
+
 
 })(window);
