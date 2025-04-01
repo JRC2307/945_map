@@ -361,7 +361,7 @@
 		spacesList.filter(function(item) { 
 			// selectedLevel is 1-indexed, but data-level is 0-indexed for Level_0, 1-indexed for Level_1, etc.
 			// So we need to subtract 1 from selectedLevel to match the data-level values
-			return item.values().level === (selectedLevel - 1).toString(); 
+			return item.values().level === (selectedLevel).toString(); 
 		});
 	}
 

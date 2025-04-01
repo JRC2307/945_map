@@ -72,7 +72,10 @@
 					<image width="32" height="32" href="Assets/icons/available.svg"/>
 				</symbol>
 				<symbol id='icon-bathroom-facilities' viewBox='0 0 32 32'>
-					<image width="32" height="32" href="Assets/icons/bathroom-facilities.svg"/>
+					<style>
+						.bathroom-icon { filter: brightness(0) invert(1); }
+					</style>
+					<image class="bathroom-icon" width="32" height="32" href="Assets/icons/bathroom-facilities.svg"/>
 				</symbol>
 				<symbol id='icon-buchi' viewBox='0 0 32 32'>
 					<image width="32" height="32" href="Assets/icons/Buchi.png"/>
@@ -224,25 +227,25 @@
 							  </svg>
 							<div class="level__pins">
 								<!-- Floor 0 - Ground Level pins -->
-								<a id="pin-0-1" class="pin pin--0-1" data-category="3" data-space="40.0900" href="#" aria-label="Pin for Bathroom L001">
+								<a id="pin-0-1" class="pin pin--0-1" data-category="1" data-space="40.0900" href="#" aria-label="Pin for Bathroom">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-bathroom-facilities"></use></svg>
 									</span>
 								</a>
-								<a id="pin-0-2" class="pin pin--0-2" data-category="2" data-space="47.0100" href="#" aria-label="Pin for Catalyst Training & Meeting Room">
+								<a id="pin-0-2" class="pin pin--0-2" data-category="2" data-space="47.0100" href="#" aria-label="Pin for Catalyst Training & Meeting">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-training-meeting"></use></svg>
 									</span>
 								</a>
-								<a id="pin-0-3" class="pin pin--0-3" data-category="2" data-space="47.0102" href="#" aria-label="Pin for Bond Training & Meeting Room">
+								<a id="pin-0-3" class="pin pin--0-3" data-category="2" data-space="47.0102" href="#" aria-label="Pin for Bond Training & Meeting">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-training-meeting"></use></svg>
 									</span>
 								</a>
-								<a id="pin-0-4" class="pin pin--0-4" data-category="2" data-space="47.0101" href="#" aria-label="Pin for React Training & Meeting Room">
+								<a id="pin-0-4" class="pin pin--0-4" data-category="2" data-space="47.0101" href="#" aria-label="Pin for React Training & Meeting">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-training-meeting"></use></svg>
@@ -375,13 +378,13 @@
 										<svg class="icon icon--logo"><use xlink:href="#icon-industrial"></use></svg>
 									</span>
 								</a>
-								<a id="pin-1-5" class="pin pin--1-5" data-category="3" data-space="41.1200" href="#" aria-label="Pin for Available Space 41.1200">
+								<a id="pin-1-5" class="pin pin--1-5" data-category="3" data-space="41.1200" href="#" aria-label="Pin for Available Space">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-available"></use></svg>
 									</span>
 								</a>
-								<a id="pin-1-6" class="pin pin--1-6" data-category="3" data-space="48.1000" href="#" aria-label="Pin for Available Space 48.1000">
+								<a id="pin-1-6" class="pin pin--1-6" data-category="3" data-space="48.1000" href="#" aria-label="Pin for Available Space">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-available"></use></svg>
@@ -405,12 +408,6 @@
 										<svg class="icon icon--logo"><use xlink:href="#icon-industrial"></use></svg>
 									</span>
 								</a>
-								<a id="pin-1-10" class="pin pin--1-10" data-category="5" data-space="42.1102" href="#" aria-label="Pin for RXN HUB Analytical Suite">
-									<span class="pin__icon">
-										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-										<svg class="icon icon--logo"><use xlink:href="#icon-industrial"></use></svg>
-									</span>
-								</a>
 								<a id="pin-1-11" class="pin pin--1-11" data-category="5" data-space="43.1400" href="#" aria-label="Pin for RXN HUB Pilot Bay Level II">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
@@ -429,12 +426,6 @@
 										<svg class="icon icon--logo"><use xlink:href="#icon-impact-chemistry"></use></svg>
 									</span>
 								</a>
-								<a id="pin-1-14" class="pin pin--1-14" data-category="6" data-space="43.1101" href="#" aria-label="Pin for NTS Labs 02">
-									<span class="pin__icon">
-										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-										<svg class="icon icon--logo"><use xlink:href="#icon-industrial"></use></svg>
-									</span>
-								</a>
 								<a id="pin-1-15" class="pin pin--1-15" data-category="6" data-space="47.1200" href="#" aria-label="Pin for QU Arts Cons">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
@@ -442,12 +433,6 @@
 									</span>
 								</a>
 								<a id="pin-1-16" class="pin pin--1-16" data-category="6" data-space="41.1100" href="#" aria-label="Pin for NanoFabrication Kingston">
-									<span class="pin__icon">
-										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-										<svg class="icon icon--logo"><use xlink:href="#icon-industrial"></use></svg>
-									</span>
-								</a>
-								<a id="pin-1-17" class="pin pin--1-17" data-category="6" data-space="43.1300" href="#" aria-label="Pin for Spectra Plasmonics">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-industrial"></use></svg>
@@ -503,7 +488,6 @@
 								  <rect id="_43.2201_Sparq_Systems_02" data-name="43.2201 Sparq Systems 02" class="cls-8" x="1133.6854" y="1214.4859" width="105.0675" height="57.1825" data-space="43.2201 Sparq Systems 02"/>
 								  <rect id="_43.2200_Sparq_Systems_03" data-name="43.2200 Sparq Systems 03" class="cls-8" x="1249.6831" y="1094.6274" width="23.6544" height="177.041" data-space="43.2200 Sparq Systems 03"/>
 								  <polygon id="_43.2300_Impact_Chemistry_L2" data-name="43.2300 Impact Chemistry L2" class="cls-8" points="1213.5984 1393.0711 1273.4578 1392.9829 1273.3375 1287.8992 1240.8514 1287.8992 1240.8514 1303.7586 1213.8593 1303.6229 1213.5984 1393.0711"/>
-								  <path id="_47.2102_RXN_HUB" data-name="47.2102 RXN HUB" class="cls-9" d="M948.9183,1042.6175h54.1449v-98.7346h-29.3952v72.7456l-22.6321.1312c-1.1715.0068-2.1177.9584-2.1177,2.13v23.7279Z"/>
 								  <rect id="_49.2100_-_Airwise_Mezzanine" data-name="49.2100 - Airwise Mezzanine" class="cls-8" x="560.6393" y="865.8075" width="75.9568" height="75.9568" data-space="49.2100 - Airwise Mezzanine"/>
 								  <rect id="Stairs_02-5" data-name="Stairs 02" class="cls-11" x="1249.9011" y="1280.5774" width="23.4364" height="6.2377" data-space="Stairs 02"/>
 								  <rect id="Stairs_02-6" data-name="Stairs 02" class="cls-11" x="1249.901" y="1272.7525" width="23.4365" height="6.2377" data-space="Stairs 02"/>
@@ -600,19 +584,13 @@
 							  </svg>
 							<div class="level__pins">
 								<!-- Floor 2 pins -->
-								<a class="pin pin--2-1" data-category="3" data-space="40.2902" href="#" aria-label="Pin for Bathroom L2">
+								<a class="pin pin--2-1" data-category="1" data-space="40.2902" href="#" aria-label="Pin for Bathroom L2">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-bathroom-facilities"></use></svg>
 									</span>
 								</a>
-								<a class="pin pin--2-2" data-category="4" data-space="40.2701" href="#" aria-label="Pin for Fractal Custom Suites 01">
-									<span class="pin__icon">
-										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-										<svg class="icon icon--logo"><use xlink:href="#icon-commercial"></use></svg>
-									</span>
-								</a>
-								<a class="pin pin--2-3" data-category="4" data-space="40.2702" href="#" aria-label="Pin for Fractal Custom Suites 02">
+								<a class="pin pin--2-2" data-category="4" data-space="40.2701" href="#" aria-label="Pin for Fractal Custom Suites">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-commercial"></use></svg>
@@ -640,18 +618,6 @@
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
 										<svg class="icon icon--logo"><use xlink:href="#icon-industrial"></use></svg>
-									</span>
-								</a>
-								<a class="pin pin--2-8" data-category="6" data-space="43.2300" href="#" aria-label="Pin for Impact Chemistry">
-									<span class="pin__icon">
-										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-										<svg class="icon icon--logo"><use xlink:href="#icon-industrial"></use></svg>
-									</span>
-								</a>
-								<a class="pin pin--2-9" data-category="5" data-space="47.2102" href="#" aria-label="Pin for RXN HUB Demo Bay">
-									<span class="pin__icon">
-										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-										<svg class="icon icon--logo"><use xlink:href="#icon-training-meeting"></use></svg>
 									</span>
 								</a>
 								<a class="pin pin--2-10" data-category="6" data-space="49.2100" href="#" aria-label="Pin for Airwise Sales Inc.">
@@ -688,7 +654,7 @@
 					</div>
 					<div class="content__item" data-space="47.0100" data-category="1">
 						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">Catalyst Training & Meeting Room</h3>
+						<h3 class="content__item-title">Catalyst Training & Meeting</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
 								<span class="content__meta-item"><strong>Status:</strong> Booking</span>
@@ -698,7 +664,7 @@
 					</div>
 					<div class="content__item" data-space="47.0102" data-category="1">
 						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">Bond Training & Meeting Room</h3>
+						<h3 class="content__item-title">Bond Training & Meeting</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
 								<span class="content__meta-item"><strong>Status:</strong> Booking</span>
@@ -708,7 +674,7 @@
 					</div>
 					<div class="content__item" data-space="47.0101" data-category="1">
 						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">React Training & Meeting Room</h3>
+						<h3 class="content__item-title">React Training & Meeting</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
 								<span class="content__meta-item"><strong>Status:</strong> Booking</span>
@@ -789,7 +755,7 @@
 					</div>
 					<div class="content__item" data-space="41.1200" data-category="3">
 						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">Available Space 41.1200</h3>
+						<h3 class="content__item-title">Available Space</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
 								<span class="content__meta-item"><strong>Status:</strong> Available</span>
@@ -799,7 +765,7 @@
 					</div>
 					<div class="content__item" data-space="48.1000" data-category="3">
 						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">Available Space 48.1000</h3>
+						<h3 class="content__item-title">Available Space</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
 								<span class="content__meta-item"><strong>Status:</strong> Available</span>
@@ -819,7 +785,7 @@
 					</div>
 					<div class="content__item" data-space="47.1100" data-category="4">
 						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">Fractal Co-Work Space</h3>
+						<h3 class="content__item-title">Fractal Co-Work Spaces</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
 								<span class="content__meta-item"><strong>Status:</strong> Leased</span>
@@ -830,16 +796,6 @@
 					<div class="content__item" data-space="42.1101" data-category="5">
 						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
 						<h3 class="content__item-title">Industrial Wet Lab</h3>
-						<div class="content__item-details">
-							<p class="content__meta">
-								<span class="content__meta-item"><strong>Status:</strong> Leased</span>
-							</p>
-							<p class="content__desc">RXN HUB is a not-for-profit organization dedicated to empowering the chemtech ecosystem and advancing the commercialization of chemical technologies. We support the scale-up and manufacturing of innovative solutions aimed at addressing complex sustainability challenges.</p>
-						</div>
-					</div>
-					<div class="content__item" data-space="42.1102" data-category="5">
-						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">Analytical Suite</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
 								<span class="content__meta-item"><strong>Status:</strong> Leased</span>
@@ -875,26 +831,6 @@
 								<span class="content__meta-item"><strong>Status:</strong> In use</span>
 							</p>
 							<p class="content__desc">Security office on Level 1.</p>
-						</div>
-					</div>
-					<div class="content__item" data-space="40.1200" data-category="4">
-						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">Fractal Private Offices 01</h3>
-						<div class="content__item-details">
-							<p class="content__meta">
-								<span class="content__meta-item"><strong>Status:</strong> Leased</span>
-							</p>
-							<p class="content__desc">Available through Fractal Workspace.</p>
-						</div>
-					</div>
-					<div class="content__item" data-space="43.1101" data-category="6">
-						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
-						<h3 class="content__item-title">NTS Labs 02</h3>
-						<div class="content__item-details">
-							<p class="content__meta">
-								<span class="content__meta-item"><strong>Status:</strong> Leased</span>
-							</p>
-							<p class="content__desc">NTS Laboratory Equipment is a company that provides equipment maintenance and repairs services specialisation for medical equipments.</p>
 						</div>
 					</div>
 					<div class="content__item" data-space="41.1100" data-category="6">
@@ -938,16 +874,7 @@
 						</div>
 					</div>
 					<div class="content__item" data-space="40.2701" data-category="4">
-						<h3 class="content__item-title">Fractal Custom Suites 01</h3>
-						<div class="content__item-details">
-							<p class="content__meta">
-								<span class="content__meta-item"><strong>Status:</strong> Available</span>
-							</p>
-							<p class="content__desc">Commercial office space available for lease.</p>
-						</div>
-					</div>
-					<div class="content__item" data-space="40.2702" data-category="4">
-						<h3 class="content__item-title">Fractal Custom Suites 02</h3>
+						<h3 class="content__item-title">Fractal Custom Suites</h3>
 						<div class="content__item-details">
 							<p class="content__meta">
 								<span class="content__meta-item"><strong>Status:</strong> Available</span>
@@ -991,16 +918,6 @@
 							<p class="content__desc">SPARQ's microinverter system is resetting the industry standard for solar energy systems, delivering greater energy harvest over traditional string inverters. It can be used in any power grid, conventional or smart, around the globe.</p>
 						</div>
 					</div>
-					<div class="content__item" data-space="43.2300" data-category="6">
-						<h3 class="content__item-title">Impact Chemistry</h3>
-						<div class="content__item-details">
-							<p class="content__meta">
-								<span class="content__meta-item"><strong>Type:</strong> Tenant</span>
-							</p>
-							<p class="content__desc">Impact Chemistry tenant space.</p>
-						</div>
-					</div>
-
 					<div class="content__item" data-space="49.2100" data-category="6">
 						<button class="boxbutton boxbutton--dark content__close-btn" aria-label="Close content"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
 						<h3 class="content__item-title">Airwise Sales Inc.</h3>
@@ -1025,56 +942,50 @@
 				</span>
 				<ul class="list grouped-by-category">
 					<!-- Training & Meeting (Category 2) -->
-					<li class="list__item" data-level="0" data-category="2" data-space="47.0100"><a href="#" class="list__link">Catalyst Training & Meeting Room</a></li>
-					<li class="list__item" data-level="0" data-category="2" data-space="47.0102"><a href="#" class="list__link">Bond Training & Meeting Room</a></li>
-					<li class="list__item" data-level="0" data-category="2" data-space="47.0101"><a href="#" class="list__link">React Training & Meeting Room</a></li>
+					<li class="list__item" data-level="1" data-category="2" data-space="47.0100"><a href="#" class="list__link">Catalyst Training & Meeting</a></li>
+					<li class="list__item" data-level="1" data-category="2" data-space="47.0102"><a href="#" class="list__link">Bond Training & Meeting</a></li>
+					<li class="list__item" data-level="1" data-category="2" data-space="47.0101"><a href="#" class="list__link">React Training & Meeting</a></li>
 					<!-- Tenants (Category 6) -->
-					<li class="list__item" data-level="1" data-category="6" data-space="47.1200"><a href="#" class="list__link">QU Arts Cons</a></li>
-					<li class="list__item" data-level="1" data-category="6" data-space="43.1300"><a href="#" class="list__link">Spectra Plasmonics</a></li>
-					<li class="list__item" data-level="1" data-category="6" data-space="43.1200"><a href="#" class="list__link">NTS Labs</a></li>
-					<li class="list__item" data-level="1" data-category="6" data-space="44.1100"><a href="#" class="list__link">AirWise</a></li>
-					<li class="list__item" data-level="1" data-category="6" data-space="43.1101"><a href="#" class="list__link">NTS Labs 02</a></li>
-					<li class="list__item" data-level="1" data-category="6" data-space="41.1100"><a href="#" class="list__link">NanoFabrication Kingston</a></li>
-					<li class="list__item" data-level="1" data-category="6" data-space="40.1101"><a href="#" class="list__link">Enviro-responisble</a></li>
-					<li class="list__item" data-level="1" data-category="6" data-space="43.1700"><a href="#" class="list__link">Impact Chemistry</a></li>
-					<li class="list__item" data-level="2" data-category="6" data-space="40.2800"><a href="#" class="list__link">Buchi</a></li>
-					<li class="list__item" data-level="2" data-category="6" data-space="49.2100"><a href="#" class="list__link">Airwise Sales Inc.</a></li>
-					<li class="list__item" data-level="2" data-category="6" data-space="43.2103"><a href="#" class="list__link">Sparq Systems</a></li>
-					<li class="list__item" data-level="2" data-category="6" data-space="43.2300"><a href="#" class="list__link">Impact Chemistry</a></li>
+					<li class="list__item" data-level="2" data-category="6" data-space="47.1200"><a href="#" class="list__link">QU Arts Cons</a></li>
+					<li class="list__item" data-level="2" data-category="6" data-space="43.1300"><a href="#" class="list__link">Spectra Plasmonics</a></li>
+					<li class="list__item" data-level="2" data-category="6" data-space="43.1200"><a href="#" class="list__link">NTS Labs</a></li>
+					<li class="list__item" data-level="2" data-category="6" data-space="44.1100"><a href="#" class="list__link">AirWise</a></li>
+					<li class="list__item" data-level="2" data-category="6" data-space="41.1100"><a href="#" class="list__link">NanoFabrication Kingston</a></li>
+					<li class="list__item" data-level="2" data-category="6" data-space="40.1101"><a href="#" class="list__link">Enviro-responisble</a></li>
+					<li class="list__item" data-level="2" data-category="6" data-space="43.1700"><a href="#" class="list__link">Impact Chemistry</a></li>
+					<li class="list__item" data-level="3" data-category="6" data-space="40.2800"><a href="#" class="list__link">Buchi</a></li>
+					<li class="list__item" data-level="3" data-category="6" data-space="49.2100"><a href="#" class="list__link">Airwise Sales Inc.</a></li>
+					<li class="list__item" data-level="3" data-category="6" data-space="43.2103"><a href="#" class="list__link">Sparq Systems</a></li>
 					
 					<!-- RXN HUB (Category 5) -->
-					<li class="list__item" data-level="1" data-category="5" data-space="42.1101"><a href="#" class="list__link">Industrial Wet Lab</a></li>
-					<li class="list__item" data-level="1" data-category="5" data-space="42.1102"><a href="#" class="list__link">Analytical Suite</a></li>
-					<li class="list__item" data-level="1" data-category="5" data-space="42.1103"><a href="#" class="list__link">Pilot Bay Level III</a></li>
-					<li class="list__item" data-level="1" data-category="5" data-space="45.1100"><a href="#" class="list__link">Pilot Bay Level II</a></li>
-					<li class="list__item" data-level="1" data-category="5" data-space="46.1100"><a href="#" class="list__link">Pilot Bay Level I</a></li>
-					<li class="list__item" data-level="1" data-category="5" data-space="43.1400"><a href="#" class="list__link">Pilot Bay Level III</a></li>
-					<li class="list__item" data-level="2" data-category="5" data-space="47.2102"><a href="#" class="list__link">Demo Bay</a></li>
+					<li class="list__item" data-level="2" data-category="5" data-space="42.1101"><a href="#" class="list__link">Industrial Wet Lab</a></li>
+					<li class="list__item" data-level="2" data-category="5" data-space="42.1103"><a href="#" class="list__link">Pilot Bay Level III</a></li>
+					<li class="list__item" data-level="2" data-category="5" data-space="45.1100"><a href="#" class="list__link">Pilot Bay Level II</a></li>
+					<li class="list__item" data-level="2" data-category="5" data-space="46.1100"><a href="#" class="list__link">Pilot Bay Level I</a></li>
+					<li class="list__item" data-level="2" data-category="5" data-space="43.1400"><a href="#" class="list__link">Pilot Bay Level III</a></li>
 					
 					<!-- Offices & Cowork Space (Category 4) -->
-					<li class="list__item" data-level="1" data-category="4" data-space="47.1100"><a href="#" class="list__link">Fractal Co-Work Space</a></li>
-					<li class="list__item" data-level="1" data-category="4" data-space="40.1200"><a href="#" class="list__link">Fractal Private Offices 01</a></li>
-					<li class="list__item" data-level="1" data-category="4" data-space="43.1400"><a href="#" class="list__link">Fractal Private Offices 02</a></li>
-					<li class="list__item" data-level="2" data-category="4" data-space="40.2701"><a href="#" class="list__link">Fractal Suites 40.2701</a></li>
-					<li class="list__item" data-level="2" data-category="4" data-space="40.2702"><a href="#" class="list__link">Fractal Suites 40.2702</a></li>
+					<li class="list__item" data-level="2" data-category="4" data-space="47.1100"><a href="#" class="list__link">Fractal Co-Work Spaces</a></li>
+					<li class="list__item" data-level="3" data-category="4" data-space="40.2701"><a href="#" class="list__link">Fractal Suites 40.2701</a></li>
+					<li class="list__item" data-level="3" data-category="4" data-space="40.2702"><a href="#" class="list__link">Fractal Suites 40.2702</a></li>
 					
 					<!-- Available Spaces (Category 3) -->
-					<li class="list__item" data-level="0" data-category="3" data-space="47.0300"><a href="#" class="list__link">Available Commercial Space</a></li>
-					<li class="list__item" data-level="0" data-category="3" data-space="44.0101"><a href="#" class="list__link">Available Industrial/Manufacturing Space</a></li>
-					<li class="list__item" data-level="1" data-category="3" data-space="41.1200"><a href="#" class="list__link">Available Space 41.1200</a></li>
-					<li class="list__item" data-level="1" data-category="3" data-space="48.1000"><a href="#" class="list__link">Available Space 48.1000</a></li>
-					<li class="list__item" data-level="2" data-category="3" data-space="40.2703"><a href="#" class="list__link">Available Space 40.2703</a></li>
-					<li class="list__item" data-level="2" data-category="3" data-space="40.2704"><a href="#" class="list__link">Available Space 40.2704</a></li>
+					<li class="list__item" data-level="1" data-category="3" data-space="47.0300"><a href="#" class="list__link">Available Commercial Space</a></li>
+					<li class="list__item" data-level="1" data-category="3" data-space="44.0101"><a href="#" class="list__link">Available Industrial/Manufacturing Space</a></li>
+					<li class="list__item" data-level="2" data-category="3" data-space="41.1200"><a href="#" class="list__link">Available Space</a></li>
+					<li class="list__item" data-level="2" data-category="3" data-space="48.1000"><a href="#" class="list__link">Available Space</a></li>
+					<li class="list__item" data-level="3" data-category="3" data-space="40.2703"><a href="#" class="list__link">Available Space 40.2703</a></li>
+					<li class="list__item" data-level="3" data-category="3" data-space="40.2704"><a href="#" class="list__link">Available Space 40.2704</a></li>
 					
 					<!-- Ammenities (Category 7) -->
-					<li class="list__item" data-level="0" data-category="7" data-space="47.0000"><a href="#" class="list__link">Patio</a></li>
+					<li class="list__item" data-level="1" data-category="7" data-space="47.0000"><a href="#" class="list__link">Patio</a></li>
 					
 					<!-- Facilities (Category 1) -->
-					<li class="list__item" data-level="0" data-category="1" data-space="40.0900"><a href="#" class="list__link">Bathroom L001</a></li>
-					<li class="list__item" data-level="1" data-category="1" data-space="48.1900"><a href="#" class="list__link">Bathrooms L101</a></li>
-					<li class="list__item" data-level="1" data-category="1" data-space="40.1900"><a href="#" class="list__link">Bathrooms L102</a></li>
-					<li class="list__item" data-level="1" data-category="1" data-space="47.1911"><a href="#" class="list__link">Security Office</a></li>
-					<li class="list__item" data-level="2" data-category="1" data-space="40.2902"><a href="#" class="list__link">Bathroom L2</a></li>
+					<li class="list__item" data-level="1" data-category="1" data-space="40.0900"><a href="#" class="list__link">Bathroom L001</a></li>
+					<li class="list__item" data-level="2" data-category="1" data-space="48.1900"><a href="#" class="list__link">Bathrooms L101</a></li>
+					<li class="list__item" data-level="2" data-category="1" data-space="40.1900"><a href="#" class="list__link">Bathrooms L102</a></li>
+					<li class="list__item" data-level="2" data-category="1" data-space="47.1911"><a href="#" class="list__link">Security Office</a></li>
+					<li class="list__item" data-level="3" data-category="1" data-space="40.2902"><a href="#" class="list__link">Bathroom L2</a></li>
 				</ul>
 			</aside>
 			<!-- /spaces-list -->
