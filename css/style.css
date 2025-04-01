@@ -788,12 +788,19 @@ button:focus {
 .grouped-by-category [data-category='3']:first-child::before,
 .grouped-by-category :not([data-category='3']) + [data-category='3']::before,
 .grouped-by-category [data-category='4']:first-child::before,
-.grouped-by-category :not([data-category='4']) + [data-category='4']::before {
+.grouped-by-category :not([data-category='4']) + [data-category='4']::before,
+.grouped-by-category [data-category='5']:first-child::before,
+.grouped-by-category :not([data-category='5']) + [data-category='5']::before,
+.grouped-by-category [data-category='6']:first-child::before,
+.grouped-by-category :not([data-category='6']) + [data-category='6']::before,
+.grouped-by-category [data-category='7']:first-child::before,
+.grouped-by-category :not([data-category='7']) + [data-category='7']::before {
 	font-size: 1.25em;
 	position: absolute;
 	top: -1.75em;
 	left: 0;
 	color: #c7c7c9;
+	font-weight: bold;
 }
 
 .grouped-by-category [data-category='2']:first-child::before,
