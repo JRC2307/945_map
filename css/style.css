@@ -1189,7 +1189,6 @@ button:focus {
 /* Level 2 pins */
 .pin--2-1 { top: 30vmin; left: 60vmin; } /* 40.2902 - Bathroom L201 */
 .pin--2-2 { top: 50vmin; left: 70vmin; } /* 40.2701 - Fractal Custom Suites 01 */
-.pin--2-3 { top: 35vmin; left: 65vmin; } /* 40.2702 - Fractal Custom Suites 02 */
 .pin--2-4 { top: 40vmin; left: 40vmin; } /* 40.2703 - Available Space */
 .pin--2-5 { top: 55vmin; left: 45vmin; } /* 40.2704 - Available Space */
 .pin--2-6 { top: 25vmin; left: 65vmin; } /* 40.2800 - Buchi */
