@@ -648,7 +648,7 @@
 	// Function to manually align pins with their SVG elements
 	function positionPinsByDataSpace() {
 		// We'll use a simpler approach that's more reliable
-		console.log('Running pin positioning...');
+		// Pin positioning initialization
 		
 		// Find all SVG elements with IDs that contain data-space values
 		const findSvgElementsWithDataSpace = () => {
@@ -679,7 +679,7 @@
 		
 		// Get the mapping
 		const dataSpaceMap = findSvgElementsWithDataSpace();
-		console.log('Data space map:', Object.keys(dataSpaceMap));
+	
 		
 		// Manual mappings for all pins based on user adjustments
 		const manualMappings = {
@@ -823,7 +823,7 @@
 		
 		// Now find all pins and position them based on their data-space values
 		const pins = document.querySelectorAll('.pin[data-space]');
-		console.log(`Found ${pins.length} pins with data-space attributes`);
+
 		
 		// Since we now have manual mappings for all pins, we can simplify the positioning logic
 		pins.forEach(pin => {
@@ -838,9 +838,9 @@
 				pin.style.left = `${position.x}vmin`;
 				pin.style.top = `${position.y}vmin`;
 				
-				console.log(`Positioned pin for ${dataSpace} at ${position.x}vmin, ${position.y}vmin`);
+
 			} else {
-				console.log(`No manual mapping found for data-space: ${dataSpace}`);
+	
 			}
 		});
 	}
@@ -861,8 +861,7 @@
 			area.classList.remove('highlighted-area');
 		});
 		
-		// Log the space ID for debugging
-		console.log(`Looking for floor area with space ID: ${spaceId}`);
+
 		
 		// Find the SVG element with the matching data-space or id attribute
 		const levels = document.querySelectorAll('.level');
@@ -896,7 +895,7 @@
 					// Check if ID contains the space ID
 					if (possibleArea.id.includes(spaceId)) {
 						area = possibleArea;
-						console.log(`Found area by partial ID match: ${possibleArea.id}`);
+
 						break;
 					}
 				}
@@ -908,7 +907,7 @@
 				for (const element of dataNameElements) {
 					if (element.getAttribute('data-name').includes(spaceId)) {
 						area = element;
-						console.log(`Found area by data-name: ${element.getAttribute('data-name')}`);
+	
 						break;
 					}
 				}
@@ -916,7 +915,7 @@
 			
 			// If an area is found, highlight it
 			if (area) {
-				console.log(`Highlighting area: ${area.id || area.getAttribute('data-space') || 'unnamed'}`);
+
 				area.classList.add('highlighted-area');
 				found = true;
 				
@@ -931,7 +930,7 @@
 			const allElements = document.querySelectorAll('path, polygon, polyline, rect');
 			for (const element of allElements) {
 				if (element.id && element.id.includes(spaceId.replace('.', ''))) {
-					console.log(`Found area by ID without dots: ${element.id}`);
+	
 					element.classList.add('highlighted-area');
 					found = true;
 					break;
@@ -940,7 +939,7 @@
 		}
 		
 		if (!found) {
-			console.log(`No matching area found for space ID: ${spaceId}`);
+	
 		}
 	}
 	
