@@ -236,9 +236,7 @@ button:focus {
 }
 
 /* Use filter instead of box-shadow to follow the perimeter - but not when already selected */
-.level:not(.level--current):hover {
-	filter: drop-shadow(0 0 2px rgba(81, 81, 88, 0.5));
-}
+
 
 .level::after {
 	font-size: 2.5vmin;
