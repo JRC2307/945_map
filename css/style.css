@@ -1431,6 +1431,7 @@ button:focus {
 		width: 100%;
 		box-sizing: border-box;
 		-webkit-appearance: none; /* Remove default iOS styling */
+		appearance: none; /* Standard property for cross-browser compatibility */
 	}
 
 	/* Fix spaces list position */
