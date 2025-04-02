@@ -1034,22 +1034,45 @@ button:focus {
 	stroke-width: 2px;
 }
 
-/* Make PNG icons bigger */
-img.icon--logo {
+/* Base icon styling for all icons */
+.pin .icon--logo {
 	position: absolute;
-	top: 15%;
-	left: 15%;
-	width: 70%;
+	top: 11%;
+	left: 25%;
+	width: 50%;
 	height: 50%;
+	fill: white;
+	opacity: 0.9;
+	transition: opacity 0.3s;
 	pointer-events: none;
 }
 
-/* Make bathroom icons white */
+/* Image-based icons (for Fractal, etc.) */
+.pin img.icon--logo {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 70%;
+	height: 70%;
+	transform: translate(-50%, -50%); /* Center perfectly */
+	object-fit: contain;
+}
+
+/* Make SVG icons white */
 .pin .icon--logo image,
 .pin .icon--logo use[xlink\:href="#icon-bathroom-facilities"] {
 	filter: brightness(0) invert(1);
 	opacity: 1;
 }
+
+/* Make image-based icons white */
+.pin img.icon--logo {
+	filter: brightness(0) invert(1);
+	opacity: 1;
+}
+
+/* Special category styling if needed in the future */
+/* Currently all icons use the same base styling */
 
 .pin--active .icon--logo,
 .pin:hover .icon--logo {
