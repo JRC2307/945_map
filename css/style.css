@@ -1034,6 +1034,16 @@ button:focus {
 	stroke-width: 2px;
 }
 
+/* Make PNG icons bigger */
+img.icon--logo {
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	width: 70%;
+	height: 50%;
+	pointer-events: none;
+}
+
 /* Make bathroom icons white */
 .pin .icon--logo image,
 .pin .icon--logo use[xlink\:href="#icon-bathroom-facilities"] {
