@@ -292,7 +292,7 @@ button:focus {
 .level--2 #L1_Outline polyline,
 .level--2 .cls-2 {
 	stroke: #9c9c9c;
-	stroke-width: 14px;
+	stroke-width: 10px;
 	stroke-linejoin: round;
 }
 
@@ -1347,6 +1347,14 @@ button:focus {
 
 .level--3 .cls-15 {
   fill: #4d4d4e;
+}
+
+/* Pink border around all elements within Level_0 */
+#Level_0 polyline,
+#Level_0 #L0-Outline_01 {
+	stroke: #9c9c9c;
+	stroke-width: 10px;
+	stroke-linejoin: round;
 }
 
 /* Mobile compatability */
